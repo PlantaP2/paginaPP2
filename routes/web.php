@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,16 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+Route::get('dashboard', function(){
+    
+    return view('dashboard');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+})->name('dashboard');
+
+Route::get('/egresados', [ContactController::class, 'index'])->name('egresados.index');
+
+Route::get('/egresados/register', [ContactController::class, 'create'])->name('egresados.create')->middleware('auth');
+
+Route::post('/egresados', [ContactController::class, 'store'])
+->name('egresados.store')
+->middleware('auth');
