@@ -1,7 +1,4 @@
-@extends('layouts.navbar')
-
-@section('navbar')
-  <div><!--inicio carrusel-->
+<div><!--inicio carrusel-->
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner carrusel-principal">
         <div class="carousel-item active" data-bs-interval="8000">
@@ -119,9 +116,3 @@
       </div><!--fin tarjeta-->
     </div><!--fin tarjetas-->
   </div><!--Fin informacion-->
-@endsection   
-
-
-
-
-

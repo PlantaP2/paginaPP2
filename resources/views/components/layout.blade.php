@@ -7,7 +7,10 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
-    <title>Document</title>
+
+    {{--Fuentes--}}
+    
+    <title>PP2 UAM-I</title>
 </head>
 <body>
     {{ $slot }}

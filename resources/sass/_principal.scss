@@ -50,3 +50,49 @@ ul{
     z-index: 100;
 }
 
+p{
+    font-family: $font-new;
+}
+
+// Backgound images in graduates page
+.background-img-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://8columnas.com.mx/ocho/wp-content/uploads/2020/03/uam.jpg');
+    background-repeat:no-repeat;
+    width:380px;
+    height:267px;
+}
+
+.background-img-1:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('https://8columnas.com.mx/ocho/wp-content/uploads/2020/03/uam.jpg');
+    background-repeat:no-repeat;
+    width:380px;
+    height:267px;
+}
+
+.background-img-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9d1nUiAQWZRSRtcC5thEWtdjeMV9Hb0h-CA&usqp=CAU');
+    background-repeat:no-repeat;
+    width:380px;
+    height:267px;
+}
+
+.background-img-2:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9d1nUiAQWZRSRtcC5thEWtdjeMV9Hb0h-CA&usqp=CAU');
+    background-repeat:no-repeat;
+    width:380px;
+    height:267px;
+}
+
+.background-img-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('http://elemblob.blob.core.windows.net/institucion/uam-i-csh545aaccc91bd9_500w.jpg');
+    background-repeat:no-repeat;
+    width:380px;
+    height:267px;
+}
+
+.background-img-3:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('http://elemblob.blob.core.windows.net/institucion/uam-i-csh545aaccc91bd9_500w.jpg');
+    background-repeat:no-repeat;
+    width:380px;
+    height:267px;
+}

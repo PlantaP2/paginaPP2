@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Contact;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory()->create([
+            'name' => 'Hector',
+            'email' => 'hectoruam96@gmail.com',
+            'password' => bcrypt('H3ctorjime')
+        ]);
+        
+        Contact::factory(10)->create([
+            'school' => 'Universidad Autonoma Metropolitana Iztapalapa (UAM-I)'
+        ]);
     }
 }

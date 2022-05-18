@@ -19,6 +19,7 @@ class CreateContactsTable extends Migration
             $table->string('school');
             $table->string('telephone');
             $table->string('email')->unique();
+            $table->text('information');
             $table->timestamps();
         });
     }

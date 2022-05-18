@@ -28,7 +28,7 @@
                 <nav class=" text-white offcanvas-body d-none d-lg-flex">
                     <a href="#" class="  text-decoration-none text-white me-4 barra-link">Inicio</a>
                     <a href="#" class="  text-decoration-none text-white me-4 barra-link">Bolsa De trabajo</a>
-                    <a href="#" class="  text-decoration-none text-white me-4 barra-link">Egresados</a>
+                    <a href="{{route('egresados.index')}}" class="  text-decoration-none text-white me-4 barra-link">Egresados</a>
                     <a href="#" class="  text-decoration-none text-white me-4 barra-link">Docentes</a>
                     <a href="#" class="  text-decoration-none text-white me-4 barra-link">Servicio Social</a>
                 </nav>
@@ -76,12 +76,6 @@
     </header><!--fin header-->
     @yield('navbar')
 
-
-
-    
-
-
-
-
+    @yield('footer')
 </body>
 </html>

@@ -5,13 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
+use Illuminate\Support\Collection;
 
 class ContactController extends Controller
 {
 
     public function index()
     {
-        return view('egresadosIndex');
+        $contacts = Contact::latest()->paginate(6);
+
+        // dd($contacts);
+
+        return view('egresadosIndex', ['contacts' => $contacts]);
     }
 
     public function create()
