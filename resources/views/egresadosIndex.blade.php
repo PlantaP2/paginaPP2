@@ -38,17 +38,15 @@
     {{--Cifras--}}
 
     <div class="container mb-5">
-        <div class="row">
-            <div class="col-4 px-0 background-img-1">
-                <!-- <img src="https://8columnas.com.mx/ocho/wp-content/uploads/2020/03/uam.jpg" alt="" class="img-fluid" style="width:380px;height:267px;"> -->
+        <div class="row d-flex flex-column flex-md-row ">
+            <div class="col-12 col-md-4 px-0 background-img-1 d-flex justify-content-center">
             </div>
 
-            
-            <div class="col-4 px-0 background-img-2">
+            <div class="col-12 col-md-4 col-lg px-0 bg-image background-img-2" style="height:267px;">
                 <!-- <img src="http://elemblob.blob.core.windows.net/institucion/uam-i-csh545aaccc91bd9_500w.jpg" alt="" class="img-fluid" style="width:380px;height:267px;"> -->
             </div>
 
-            <div class="col-4 px-0 background-img-3">
+            <div class="col-12 col-md-4 px-0 background-img-3">
                 <!-- <img src="http://elemblob.blob.core.windows.net/institucion/uam-i-csh545aaccc91bd9_500w.jpg" alt="" class="img-fluid" style="width:380px;height:267px;"> -->
             </div>
         </div>

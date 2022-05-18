@@ -60,6 +60,8 @@ p{
     background-repeat:no-repeat;
     width:380px;
     height:267px;
+    background-position: center;
+    background-size: cover;
 }
 
 .background-img-1:hover{
@@ -67,20 +69,26 @@ p{
     background-repeat:no-repeat;
     width:380px;
     height:267px;
+    background-position: center;
+    background-size: cover;
 }
 
 .background-img-2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9d1nUiAQWZRSRtcC5thEWtdjeMV9Hb0h-CA&usqp=CAU');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/UAMI_CBI_NITE.JPG/350px-UAMI_CBI_NITE.JPG');
     background-repeat:no-repeat;
     width:380px;
-    height:267px;
+    height:100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .background-img-2:hover{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9d1nUiAQWZRSRtcC5thEWtdjeMV9Hb0h-CA&usqp=CAU');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/UAMI_CBI_NITE.JPG/350px-UAMI_CBI_NITE.JPG');
     background-repeat:no-repeat;
     width:380px;
     height:267px;
+    background-position: center;
+    background-size: cover;
 }
 
 .background-img-3{
@@ -88,6 +96,8 @@ p{
     background-repeat:no-repeat;
     width:380px;
     height:267px;
+    background-position: center;
+    background-size: cover;
 }
 
 .background-img-3:hover{
@@ -95,4 +105,6 @@ p{
     background-repeat:no-repeat;
     width:380px;
     height:267px;
+    background-position: center;
+    background-size: cover;
 }
