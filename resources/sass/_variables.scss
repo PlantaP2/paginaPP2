@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;800&display=swap');
 // Body
 $body-bg: #f8fafc;
+
+//colores
+$success: #0f9806;
+$gris: #cac7c7;
+$nav-link-hover-color: $success;
+$nav-link-color: rgb(20, 20, 20);
+$nav-tabs-link-active-bg:$success;
+$nav-tabs-link-active-border-color:rgb(20, 20, 20);
+$nav-tabs-link-active-color:#f8fafc;;
 
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-new: 'Ubuntu', sans-serif;
+$font-article: 'Fira Sans Condensed', sans-serif;
 
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;

@@ -1,6 +1,7 @@
-<footer class="bg-black pt-3 ">
-    <div class="row  justify-content-center text-white " >
-      <div class="col-md-6 text-center mb-5  footer-img">
+<footer class="bg-success pt-3 ">
+  <div  class="container-xl">
+    <div class="row  justify-content-center text-white" >
+      <div class="col-md-6 text-center mb-5  ">
         <h2 class="fw-bold ">Siguenos en nuestras redes</h2>
         <div class="row justify-content-lg-center">
           <div class="col-6">
@@ -48,4 +49,6 @@
         </ul>
       </div>
     </div>
+  </div>
+    
   </footer>

@@ -42,3 +42,8 @@ Route::post('/egresados', [ContactController::class, 'store'])
 Route::get('/articulos', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('/articulos/registro', [ArticleController::class, 'create'])->name('articles.create');
 Route::post('/articulos', [ArticleController::class, 'store'])->name('articles.store');
+
+//Docentes
+Route::get('/docentes', function () {
+    return view('docentes');
+})->name('docentes');
