@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
 
 /*
@@ -31,8 +32,13 @@ Route::get('/dashboard', function(){
 //Seccion egresados
 Route::get('/egresados', [ContactController::class, 'index'])->name('egresados.index');
 
-Route::get('/egresados/register', [ContactController::class, 'create'])->name('egresados.create')->middleware('auth');
+Route::get('/egresados/registro', [ContactController::class, 'create'])->name('egresados.create')->middleware('auth');
 
 Route::post('/egresados', [ContactController::class, 'store'])
 ->name('egresados.store')
 ->middleware('auth');
+
+//Articles
+Route::get('/articulos', [ArticleController::class, 'index'])->name('articles.index');
+Route::get('/articulos/registro', [ArticleController::class, 'create'])->name('articles.create');
+Route::post('/articulos', [ArticleController::class, 'store'])->name('articles.store');

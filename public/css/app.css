@@ -11392,3 +11392,10 @@ p {
   background-position: center;
   background-size: cover;
 }
+
+.footer-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.fmex16-1.fna.fbcdn.net/v/t1.18169-9/423838_10151083630438802_18652832_n.png?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=hA78eWk5i8UAX9Ae3B1&_nc_ht=scontent.fmex16-1.fna&oh=00_AT-Z9Rrc9CygwLBkk-tKsS6-ngWzaC5ASsrnefaUYDay_g&oe=62AB9545");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

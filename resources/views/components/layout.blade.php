@@ -12,7 +12,7 @@
     
     <title>PP2 UAM-I</title>
 </head>
-<body>
+<body class="bg-white">
     {{ $slot }}
 </body>
 </html>

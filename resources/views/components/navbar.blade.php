@@ -17,6 +17,7 @@
                     <a href="{{ route('index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">Inicio</a>
                     <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Docentes</a>
                     <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Egresados</a>
+                    <a href="{{route('articles.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Articulos</a>
                     <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Servicio Social</a>
                     <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Bolsa De trabajo</a>
                     

@@ -2,10 +2,12 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner carrusel-principal">
         <div class="carousel-item active" data-bs-interval="8000">
-          <img src="https://cdn.pixabay.com/photo/2015/11/15/07/47/geometry-1044090_960_720.jpg" class="d-block w-100" alt="...">
+          <img src="https://scontent.fmex16-1.fna.fbcdn.net/v/t1.6435-9/174346622_103436921886170_2994299914921642913_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=LB5bFutcsjoAX9QJloz&_nc_ht=scontent.fmex16-1.fna&oh=00_AT_vZNrum9voaaBZcVd5Mvw-x-IzAzdOdfabEb9xk4ORRg&oe=62ACE1E0" 
+          class="d-block w-100 img-fluid" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="8000">
-          <img src="https://cdn.pixabay.com/photo/2016/04/25/18/59/lithuania-1352632_960_720.jpg" class="d-block w-100" alt="...">
+          <img src="https://scontent.fmex16-1.fna.fbcdn.net/v/t1.6435-9/44284066_10156202774938802_274233554475417600_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=PMlYTdPO62gAX9imSbd&_nc_ht=scontent.fmex16-1.fna&oh=00_AT_-8CGiIRuwNLp-D0zTYJUDtL4FR1WFacNYFGX9PfaiyA&oe=62AABBBD" 
+          class=" img-fluid" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="8000">
           <img src="https://cdn.pixabay.com/photo/2019/04/14/10/27/book-4126483_960_720.jpg" class="d-block w-100" alt="...">
