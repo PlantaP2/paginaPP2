@@ -36,3 +36,8 @@ Route::get('/egresados/register', [ContactController::class, 'create'])->name('e
 Route::post('/egresados', [ContactController::class, 'store'])
 ->name('egresados.store')
 ->middleware('auth');
+
+
+Route::get('/docentes', function () {
+    return view('docentes');
+})->name('docentes');

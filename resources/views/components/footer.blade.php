@@ -1,4 +1,5 @@
 <footer class="bg-success pt-3 ">
+  <div  class="container-xl">
     <div class="row  justify-content-center text-white" >
       <div class="col-md-6 text-center mb-5  ">
         <h2 class="fw-bold ">Siguenos en nuestras redes</h2>
@@ -48,4 +49,6 @@
         </ul>
       </div>
     </div>
+  </div>
+    
   </footer>

@@ -15,7 +15,7 @@
                 </button>
                 <nav class=" text-white offcanvas-body d-none d-lg-flex">
                     <a href="{{ route('index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">Inicio</a>
-                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Docentes</a>
+                    <a href="{{route('docentes')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Docentes</a>
                     <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Egresados</a>
                     <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Servicio Social</a>
                     <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Bolsa De trabajo</a>
@@ -62,13 +62,13 @@
                         <!-- Authentication Links -->
                         
                             <li class="nav-item pt-2">
-                                <a href="#" class="text-decoration-none text-white me-2 barra-link">Inicio</a>
+                                <a href="{{route('index')}}" class="text-decoration-none text-white me-2 barra-link">Inicio</a>
                             </li>
                             <li class="nav-item pt-2">
-                                <a href="#" class="  text-decoration-none text-white me-2 barra-link">Docentes</a>
+                                <a href="{{route('docentes')}}" class="  text-decoration-none text-white me-2 barra-link">Docentes</a>
                             </li>
                             <li class="nav-item pt-2">
-                                <a href="#" class="  text-decoration-none text-white me-2 barra-link">Egresados</a>
+                                <a href="{{route('egresados.index')}}" class="  text-decoration-none text-white me-2 barra-link">Egresados</a>
                             </li>
                             <li class="nav-item pt-2">
                                 <a href="cerca-de-mi.html" class="  text-decoration-none text-white me-2 barra-link">Servicio social</a>
