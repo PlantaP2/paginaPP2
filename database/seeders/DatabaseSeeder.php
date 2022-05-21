@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Article;
 use App\Models\Contact;
 use Illuminate\Database\Seeder;
 
@@ -22,6 +23,10 @@ class DatabaseSeeder extends Seeder
         
         Contact::factory(10)->create([
             'school' => 'Universidad Autonoma Metropolitana Iztapalapa (UAM-I)'
+        ]);
+
+        Article::factory(10)->create([
+            'link' => 'https://www.mdpi.com/2076-3417/10/24/9060'
         ]);
     }
 }
