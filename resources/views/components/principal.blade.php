@@ -24,8 +24,8 @@
   </div><!--fin carrusel-->
 
   <main class="container-xl "><!--contenido principal-->
-    <h1 class="text-center">Bienvenido a la PP2</h1>
-    <div class="  shadow-lg pb-5 mb-3 ">
+    <h1 class="text-center my-3">Bienvenido a la PP2</h1>
+    <div class="  shadow-lg pb-5 mb-3 bg-dark" style="--bs-bg-opacity: .5;">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -35,30 +35,30 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="row justify-content-center my-5 align-items-center" id="bienvenida"><!--inicio contenido pestaña-->
-              <h2 class="text-center fw-bold  mb-5">Te damos la bienvenida</h2>
+              <h2 class="text-center fw-bold  mb-5 text-white">Te damos la bienvenida</h2>
               <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t1.18169-9/945210_551285138255632_1825901571_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeEnb426xqMVnB2dyyKHAuoivYVfzedK2R69hV_N50rZHqDvPQeLQslhGtlxrVxfVP4M6zHSSlF2GlrcC0qGVWeE&_nc_ohc=5-Ah1TSi0aAAX9g8acH&_nc_ht=scontent.fmex34-1.fna&oh=00_AT9ZkUXaIjncplj-wzJHXfnVxQ7dmTZwuXY4AtKOzhlA4g&oe=62AC2CE5" class="img-fluid col-md-5 mb-5 mb-md-0" alt="">
               <div class="col-md-6">
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
               </div> 
             </div><!--fin contenido pestaña-->
           </div>
-          <div class="carousel-item" data-bs-interval="10000">
+          <div class="carousel-item " data-bs-interval="10000">
             <div class="row justify-content-center my-5 align-items-center" id="bienvenida"><!--inicio contenido pestaña-->
-              <h2 class="text-center fw-bold  mb-5">Impacto social</h2>
+              <h2 class="text-center fw-bold  mb-5 text-white">Impacto social</h2>
               <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t39.30808-6/281988811_348938564002670_332877275982098190_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHMVimEIMVKyO9Uilur6gSqunJSdeACPce6clJ14AI9x332w7zFliNPhLvOc2H_Fs2NAg4vMk2cbx1gpH-Cvs8z&_nc_ohc=dYfdmMwUvwkAX92LDnh&_nc_ht=scontent.fmex34-1.fna&oh=00_AT-dHohVNKgxh7iTA2k3lIATjMBb3lLeNXw5pLxU7NEBDQ&oe=628BD3DB" class="img-fluid col-md-5 mb-5 mb-md-0" alt="">
               <div class="col-md-6">
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
               </div> 
             </div><!--fin contenido pestaña-->
           </div>
             <div class="carousel-item  data-bs-interval="10000"">
               <div class="row justify-content-center my-5 align-items-center" id="bienvenida"><!--inicio contenido pestaña-->
-                <h2 class="text-center fw-bold  mb-5">Contactos</h2>
+                <h2 class="text-center fw-bold  mb-5 text-white">Contactos</h2>
                 <div class=" col-md-5 row mb-5 mb-md-0 ">
                   <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t1.18169-9/390302_138786489558101_1730006680_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHyZXFiwbkBZ4GhwsAJjJ8W-9u4HQ_G-0j727gdD8b7SCBflOFjCa-pVd2mj8cWnzk8vWn0qkI8tIc41uAojc9R&_nc_ohc=AGk-JLTDwNAAX9xC18z&_nc_ht=scontent.fmex34-1.fna&oh=00_AT-32M5ZRx5YC3Z8sHkZd0IQRt-yKgniVZO3qv9DBptLKg&oe=62ACE003"  class="img-fluid col-4 " alt="">
                   <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t39.30808-6/244627907_4648448548521757_8111407843219712119_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF2sID7G9dOsgA1LVJ-DqcQxRv70aIL6Y7FG_vRogvpjl0veJ8F3Z5_rIDV195v4zW_amDy1MMwEs-wYIypDWHf&_nc_ohc=IuTTG9PYIZkAX_BgyzK&_nc_ht=scontent.fmex34-1.fna&oh=00_AT8xJW2EFoEYCw5XqXVAyw12GNJPBg9d_qQgL9M0wWjE4A&oe=628B4A6A"  class="img-fluid col-4" alt="">
@@ -69,8 +69,8 @@
 
                 </div>
                 <div class="col-md-6">
-                  <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
-                  <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                  <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
+                  <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, suscipit similique ab quam quasi non nostrum possimus dignissimos ad in cupiditate laborum sed repudiandae impedit voluptas cumque modi? Necessitatibus, exercitationem.</p>
                 </div> 
               </div><!--fin contenido pestaña-->
             </div>
@@ -86,7 +86,7 @@
       </div>
     </div>
   </main>
-  <div class="container-xl mb-5"><!--experiencia-->
+  <div class="container-xl my-5"><!--experiencia-->
     <h1 class="text-center text-success fw-bold">Nuestra Experiencia</h1>
     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis et unde soluta atque similique laboriosam blanditiis delectus numquam, consequatur fuga, ab eos ex nam dolorem corporis recusandae! Voluptatibus, similique.</p>
   </div>

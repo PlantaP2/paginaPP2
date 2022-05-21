@@ -9,7 +9,7 @@
 
     {{--Articles image--}}
     <section class="text-center mt-5">
-        <h2 class="mb-5">Articulos recomendados</h2>
+        <h2 class="mb-5">Publicaciones</h2>
         <x-underline-text/>
     </section>
     
@@ -50,6 +50,11 @@
         
     </div>
 
+    {{--Pagination--}}
+    <div class="d-flex justify-content-center">
+        {{ $articles->links() }}
+    </div>
+    
     {{--End article cards--}}
 
     <x-footer></x-footer>

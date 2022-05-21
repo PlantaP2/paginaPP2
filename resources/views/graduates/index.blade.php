@@ -69,7 +69,7 @@
             @endforeach
             
         </div>
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-center">
             {!! $contacts->links() !!}
         </div>
     </div>

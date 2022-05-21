@@ -1,14 +1,14 @@
 <x-layout>
     <x-navbar></x-navbar>
     <div class="container-xl mt-3">
-        <h1 class="fw-bold">Conoce a nuestros Representantes</h1>
+        <h1 class="fw-bold">Conoce a nuestros representantes</h1>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active  fw-bold fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Raúl Leyte</button>
+                <button class="nav-link active  fw-bold fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Raúl L. Leyte</button>
                 
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link  fw-bold fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Alejandro Aldaco</button>
+                <button class="nav-link  fw-bold fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Alejandro T. Aldaco</button>
 
                 
             </li>
@@ -34,7 +34,7 @@
                     
                     <div class=" col-md-8">
                         <h3 class="mt-4 mt-md-0">Perfil</h3>
-                        <ul class=" list-group">
+                        <ul class="list-group">
                             <li class="list-group-item">Doctor en ingenieria mecánica </li>
                             <li class="list-group-item">Especialidad en plantas térmicas e Ingeniería en procesos</li>
                             <li class="list-group-item" > Perteneciente al departamento Ingenieria de procesos e hidráulica</li>
@@ -61,7 +61,7 @@
 
                 </div>
                 <div class="container-xl mt-5 info-docentes mt-5">
-                    <h3 class="fw-bold mb-3 text-center text-md-start " >Investigaciones</h3>
+                    <h3 class="fw-bold mb-3 text-center text-md-start">Investigaciones</h3>
 
                     <ul class="list-group mb-3">
                         <li class="list-group-item ">

@@ -9,12 +9,12 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        return view('articles', ['articles' => Article::latest()->get()]);
+        return view('articles.index', ['articles' => Article::latest()->paginate(3)]);
     }
 
     public function create()
     {
-        return view('articles-form');
+        return view('articles.create');
     }
 
     public function store(Request $request)
@@ -25,7 +25,7 @@ class ArticleController extends Controller
             'author' => 'required|max:255',
             'date' => 'required',
             'link' => 'required',
-            'abstract' => 'required|max:1000'
+            'abstract' => 'required|max:3000'
         ]);
 
         Article::create([

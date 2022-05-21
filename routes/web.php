@@ -45,5 +45,5 @@ Route::post('/articulos', [ArticleController::class, 'store'])->name('articles.s
 
 //Docentes
 Route::get('/docentes', function () {
-    return view('docentes');
+    return view('docentes.index');
 })->name('docentes');

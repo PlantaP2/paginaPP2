@@ -16,12 +16,12 @@ class ContactController extends Controller
 
         // dd($contacts);
 
-        return view('egresadosIndex', ['contacts' => $contacts]);
+        return view('graduates.index', ['contacts' => $contacts]);
     }
 
     public function create()
     {
-        return view('egresados');
+        return view('graduates.create');
     }
 
     public function store(Request $request){
@@ -41,5 +41,10 @@ class ContactController extends Controller
         ]);
 
         return back()->with('status', 'Creado con exito');
+    }
+
+    public function edit(Contact $contact)
+    {
+
     }
 }

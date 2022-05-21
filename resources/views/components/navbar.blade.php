@@ -1,4 +1,4 @@
-<header class="bg-success py-2 mt-0 ">
+<header class="py-2 mt-0 color-theme">
         <div class="container-xl  text-white  d-md-flex justify-content-between align-items-center">
     
             <div class="logo align-items-center ms-5"><!--logo-->

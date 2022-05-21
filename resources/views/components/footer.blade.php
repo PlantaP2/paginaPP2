@@ -1,4 +1,4 @@
-<footer class="bg-success pt-3 ">
+<footer class=" pt-3 color-theme">
   <div  class="container-xl">
     <div class="row  justify-content-center text-white" >
       <div class="col-md-6 text-center mb-5  ">
