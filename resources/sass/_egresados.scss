@@ -1,0 +1,23 @@
+
+.tarjeta{
+    border-radius: 20px;
+}
+
+.cuerpo-card{
+    height: 350px;
+    overflow: auto;
+    border-radius: 20px;
+    /* width */
+    
+    h5{
+        border-bottom: 1px solid $success;
+    }
+}
+
+.bg-log{
+    background-image:url('/images/principal/carrusel/carrusel3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+

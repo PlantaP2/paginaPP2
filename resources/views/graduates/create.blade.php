@@ -1,25 +1,23 @@
 <x-layout>
     <x-navbar></x-navbar>
 
-        <img src="https://scontent.fmex16-1.fna.fbcdn.net/v/t1.6435-9/174346622_103436921886170_2994299914921642913_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=LB5bFutcsjoAX9QJloz&_nc_ht=scontent.fmex16-1.fna&oh=00_AT_vZNrum9voaaBZcVd5Mvw-x-IzAzdOdfabEb9xk4ORRg&oe=62ACE1E0" 
-        alt="" class="img-fluid">
-        <h1 class="text-center my-5">Datos del contacto</h1>
+        <img src="/images/principal/carrusel/carrusel1.jpg" 
+        alt="" class="img-fluid carrusel-principal w-100">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-2"></div>
+        <div class="container-xl ">
+            <h1 class="text-center my-3">Datos del contacto</h1>
+
+            <div class="row justify-content-center">
                 <div class="col-8">
                     <div class="bg-secondary mb-5" style="height:1px;"></div>
                 </div>
-                <div class="col-2"></div>
             </div>
         </div>
 
         @if ($errors->any())
             
-            <div class="container my-5 alert ">
-                <div class="row">
-                    <div class="col-sm-3"></div>
+            <div class="container-xl my-5 alert ">
+                <div class="row justify-content-center">
                         <div class="col-12 col-sm-6 alert-danger">
                             <ul>
                                 @foreach ($errors->all() as $error)
@@ -27,13 +25,12 @@
                                 @endforeach
                             </ul>
                         </div>
-                    <div class="col-sm-3"></div>
                 </div>
             </div>
         @endif
 
         @if (session('status'))
-            <div class="container my-5">
+            <div class="container-xl my-5">
                 <div class="row">
                     <div class="col-sm-3"></div>
                         <div class="col-12 col-sm-6">
@@ -72,7 +69,7 @@
                         <textarea name="information" id="" cols="50" rows="10" class="form-control" placeholder="Máximo 250 caracteres."></textarea>
 
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary my-3">Agregar</button>
+                            <button type="submit" class="btn btn-outline-success  my-3">Agregar</button>
                         </div>
                     </div>
                 </div>

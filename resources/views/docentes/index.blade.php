@@ -21,7 +21,7 @@
                 <h2 class="text-center">Dr. Raul Lugo Leyte</h2>
                 <div class="row align-items-top">
                     <div class=" col-md-3">
-                        <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t1.6435-9/46077478_516488992186668_6403657802950115328_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeFru0BnLh5OXrVRhSWUMNz3y3_jE7VZU9zLf-MTtVlT3GTIgKLxghQ_mcCPZ_H1_HqBw9en-oSX5R4GGoZUkeDd&_nc_ohc=mzKLhBqslpUAX_Ib_zr&_nc_ht=scontent.fmex34-1.fna&oh=00_AT_9o0oEoubO1o7zqiKHtb_TsiZnMq1VvwGoliP9ZCy8MQ&oe=62AD7200" alt="Imagen profesor Raúl Lugo Leyte" class="img-fluid">
+                        <img src="images/docentes/lugoleyte.jpg" alt="Imagen profesor Raúl Lugo Leyte" class="img-fluid">
                         <div class="links mt-2 row ">
                             <h3 class="text-primary col-6">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -101,7 +101,7 @@
                 <h2 class="text-center">M. Alejandro Torres Aldaco</h2>
                 <div class="row align-items-top">
                     <div class=" col-md-3">
-                        <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t1.6435-9/46053340_516489112186656_1232551108807753728_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cdbe9c&_nc_eui2=AeHUfNDixHCZxlWDxQWSw5M6gXVN0DDvnemBdU3QMO-d6cOgDB0qwrcw1BFViuhMjePyous_FauuIafBLG5-yaGd&_nc_ohc=MvXKsvtp0fQAX-7G5xi&_nc_ht=scontent.fmex34-1.fna&oh=00_AT-64LdiBOn7LV5X6z1Y-5qie-2iIVBbxBRcG16OemN7tQ&oe=62AE5BA9" alt="Imagen Alejandro Torres Aldaco" class="img-fluid">
+                        <img src="images/docentes/torresAldaco.jpg" alt="Imagen Alejandro Torres Aldaco" class="img-fluid">
 
                         <div class="links mt-2 row ">
                             <h3 class="text-primary col-6">
