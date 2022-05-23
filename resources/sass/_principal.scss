@@ -1,3 +1,12 @@
+body{
+    background-color: $body-bg;
+}
+p,h1,h2,h3,h4,a,li{
+    font-family: $font-texts;
+}
+.boton-cerrar-canvas:hover{
+    cursor: pointer;
+}
 .tarjeta{
     background-color: #F3E8EE;
 }
@@ -12,7 +21,7 @@
 }
 
 .informacion{
-    background-image: url('https://scontent.fmex34-1.fna.fbcdn.net/v/t31.18172-8/1262438_601184356599043_127724781_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeE_3HWDQolAxpFr61BEpUmptWi6TkFjXvK1aLpOQWNe8jDPGRCE4IWvxSVMrLalBDVVUGhR7fu355z7_pdaTh4U&_nc_ohc=AakLgf5e0zQAX_u9awb&_nc_oc=AQnXpD0QgNyM5WarB2l7mcjVCz_pouaoi8TyRByMD5ZobIsnBxUmnJVqQNbVEnPpDsA&_nc_ht=scontent.fmex34-1.fna&oh=00_AT8LaxUTveeJuG6UKuq7gs8CiliIGJDts6Kb0P4Y0p5dyA&oe=62AAD45D');
+    background-image: url('/images/principal/fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     a{
