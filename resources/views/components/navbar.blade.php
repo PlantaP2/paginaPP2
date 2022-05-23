@@ -1,15 +1,13 @@
 <header class="py-2 mt-0 color-theme">
         <div class="container-xl  text-white  d-md-flex justify-content-between align-items-center">
     
-            <div class="logo align-items-center ms-5"><!--logo-->
+            <div class="logo align-items-center col-4"><!--logo-->
                 <a href="/" class="text-decoration-none text-white ">
-                    <h1 class="text-center text-md-start ">
-                        PP2
-                    </h1>
+                    <img src="./images/logo.png" alt="" class="d-block w-100">
                 </a>    
             </div><!--fin logo-->
     
-            <div class="navbar navbar-expand-lg navbar-dark">
+            <div class="navbar navbar-expand-lg navbar-dark col-8">
                 <button class="navbar-toggler " data-bs-toggle="offcanvas" data-bs-target="#navegacion">
                     <span class="navbar-toggler-icon "></span>
                 </button>
@@ -18,8 +16,8 @@
                     <a href="{{route('docentes')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Docentes</a>
                     <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Egresados</a>
                     <a href="{{route('articles.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Articulos</a>
-                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Servicio Social</a>
-                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Bolsa De trabajo</a>
+                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Producción academica</a>
+                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Servicios exteriores</a>
                     
                         @guest
                             

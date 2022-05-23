@@ -32,6 +32,7 @@
     <div class="container mb-5">
         <div class="row d-flex flex-column flex-md-row ">
             <div class="col-12 col-md-4 px-0 background-img-1 d-flex justify-content-center">
+                <p class="text-white">Nuestros alumnos trabajan en empresas transnacionales y nacionales: GE, Trans Canadá, PEMEX, CFE, Mitsui &CO,  Iberdrola, etc.</p>
             </div>
 
             <div class="col-12 col-md-4 col-lg px-0 bg-image background-img-2" style="height:267px;">

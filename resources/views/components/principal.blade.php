@@ -23,8 +23,17 @@
     </div>
   </div><!--fin carrusel-->
 
-  <main class="container-xl "><!--contenido principal-->
-    <h1 class="text-center my-3">Bienvenido a la PP2</h1>
+  <main class="container-xl my-5"><!--contenido principal-->
+    <h1 class="text-center ">Bienvenido a la PP2</h1>
+    <div class="row mt-5">
+      <div class="col-12 d-flex flex-row justify-content-evenly">
+        <div class="d-flex flex-column justify-content-center">
+          <img src="./images/logo-izt.png" alt="" class="img-fluid bg-primary rounded">
+          <h4 class="text-uppercase mt-3 text-center" style="color:#509f4a;">iztapalapa</h4>
+        </div>
+        <h3 class="ms-2">ÁREA DE INGENIERÍA EN RECURSOS ENERGÉTICOS</h3>
+      </div>
+    </div>
     <div class="  shadow-lg pb-5 mb-3 bg-dark" style="--bs-bg-opacity: .5;">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
