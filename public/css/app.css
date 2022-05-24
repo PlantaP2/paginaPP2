@@ -11293,8 +11293,13 @@ body {
   background-color: #f3f5f7;
 }
 
-p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, a, li {
+p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, a, li, label {
   font-family: "Roboto", sans-serif;
+}
+
+.bg-custom {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 6%, rgb(80, 159, 74) 60%);
 }
 
 .boton-cerrar-canvas:hover {
@@ -11314,20 +11319,9 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, a, li {
 }
 
 .informacion {
-  background-image: url("/images/principal/fondo.jpg");
+  background-image: linear-gradient(rgba(33, 37, 41, 0.7) 0%, #212529 100%), url("/images/principal/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.informacion a {
-  color: white;
-}
-.informacion .card {
-  width: 18rem;
-  background-color: black;
-  transition: width ease-out 0.2s;
-}
-.informacion .card:hover {
-  width: 20rem;
 }
 
 footer h2, footer .h2 {
@@ -11427,7 +11421,7 @@ ul {
 }
 
 .cuerpo-card {
-  height: 350px;
+  max-height: 350px;
   overflow: auto;
   border-radius: 20px;
   /* width */

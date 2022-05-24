@@ -2,10 +2,10 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner carrusel-principal">
         <div class="carousel-item active" data-bs-interval="5000">
-          <img src="images/principal/carrusel/carrusel1.jpg" class="d-block img-fluid" alt="...">
+          <img src="images/principal/carrusel/carrusel1.jpg" class="d-block img-fluid w-100" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="images/principal/carrusel/carrusel2.jpg" class="d-block img-fluid" alt="...">
+          <img src="images/principal/carrusel/carrusel2.jpg" class="d-block img-fluid w-100" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="5000">
           <img src="images/principal/carrusel/carrusel3.jpg" class="d-block w-100" alt="...">
@@ -24,34 +24,14 @@
   </div><!--fin carrusel-->
 
   <main class="container-xl my-5"><!--contenido principal-->
-    
-    <div class="row mt-5">
-      <div class="col-12 d-flex flex-row justify-content-evenly mt-5">
-        <div class="d-flex flex-column justify-content-center">
-          <img src="./images/logo-izt.png" alt="" class="img-fluid bg-primary rounded">
-          <h4 class="text-uppercase mt-3 text-center" style="color:#509f4a;">iztapalapa</h4>
-        </div>
-        
-        <div class="mt-0 mt-md-4 mt-lg-5">
-          <div class="">
-            <p class="h3"><strong>Bienvenido a la PP2</strong></p>
-          </div>
-          <div>
-            <p class="h4">ÁREA DE INGENIERÍA EN RECURSOS ENERGÉTICOS</p>
-          </div>
-        </div>
-        
-      </div>
+    <div class=" my-5 text-center   border-bottom-0">
+      <p class="h3"><strong>Bienvenido a la PP2</strong></p>
+      <p class="h4">ÁREA DE INGENIERÍA EN RECURSOS ENERGÉTICOS</p>
+      <img src="./images/logo.png" alt="" class="img-fluid mt-3">
 
-      <div class="col-12 my-5 text-center">
-        <p class="h4">Termodinámica, Turbomaquinaría y Energías Sustentables</p>
-        <img src="./images/logo.png" alt="" class="img-fluid">
-      </div>
-
-      <div class="col-12">
-
-      </div>
     </div>
+
+
     <div class="  shadow-lg pb-5 mb-3 bg-white" >
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -125,37 +105,24 @@
     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis et unde soluta atque similique laboriosam blanditiis delectus numquam, consequatur fuga, ab eos ex nam dolorem corporis recusandae! Voluptatibus, similique.</p>
   </div>
   <!--inicio informacion-->
-  <div class="informacion bg-dark pt-4 mb-0">
-    <div class="container-xl">
-      <div class="row justify-content-center"><!--inicio tarjetas-->
-        <div class="card col-md-4 mb-5 me-3"><!--inicio tarjeta-->
-          <a href="{{route('docentes')}}" class="text-decoration-none  ">
-            <img src="https://cdn.pixabay.com/photo/2018/01/26/09/04/mathematics-3108152_960_720.jpg" class="card-img-top mt-2 " alt="...">
-            <div class="card-body ">
-              <h5 class="card-title text-center">Nuestros Docentes</h5>
-              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil perferendis accusantium animi reiciendis ut</p>
-            </div>
-          </a> 
-        </div><!--fin tarjeta-->
-        <div class="card col-md-4 mb-5 me-3"><!--inicio tarjeta-->
-          <a href="{{route('egresados.index')}}" class="text-decoration-none ">
-            <img src="https://cdn.pixabay.com/photo/2018/05/26/06/46/graduation-cap-3430714_960_720.jpg" class="card-img-top mt-2 " alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Egresados</h5>
-              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil perferendis accusantium animi reiciendis ut</p>
-            </div>
-          </a> 
-        </div><!--fin tarjeta-->
-        <div class="card col-md-4 mb-5 me-3"><!--inicio tarjeta-->
-          <a href="#" class="text-decoration-none  ">
-            <img src="https://cdn.pixabay.com/photo/2014/06/17/16/53/construction-370588_960_720.jpg" class="card-img-top mt-2 " alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Proyectos</h5>
-              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil perferendis accusantium animi reiciendis ut</p>
-            </div>
-          </a> 
-        </div><!--fin tarjeta-->
-      </div><!--fin tarjetas-->
+  <div class="informacion text-white fw-bold py-4 ">
+    <div class="container-xl  ">
+      <h1 class="text-center  ">Contacto</h1>
+      <form class="form " >
+        <fieldset>
+          <legend>Deja tus datos y te contactaremos</legend>
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+          <label for="correo" class="form-label">E-mail:</label>
+          <input class="form-control " type="email" name="email" id="email" placeholder="Tu E-mail">
+          <label for="asunto" class="form-label mt-2">Asunto:</label>
+          <textarea class="form-control " name="asunto" id="asunto" cols="30" rows="10"></textarea>
+          <button type="submit" value="Enviar" class="btn btn-outline-light mt-3 px-4 fw-bold  ">enviar</button>
+        </fieldset>
+
+
+
+      </form>
     </div>
 
   </div><!--Fin informacion-->

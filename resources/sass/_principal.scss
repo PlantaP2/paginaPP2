@@ -1,8 +1,12 @@
 body{
     background-color: $body-bg;
 }
-p,h1,h2,h3,h4,a,li{
+p,h1,h2,h3,h4,a,li,label{
     font-family: $font-texts;
+}
+.bg-custom{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 6%, rgba(80,159,74,1) 60%);
 }
 .boton-cerrar-canvas:hover{
     cursor: pointer;
@@ -21,22 +25,12 @@ p,h1,h2,h3,h4,a,li{
 }
 
 .informacion{
-    background-image: url('/images/principal/fondo.jpg');
+    //background-image: url('/images/principal/fondo.jpg');
+    background-image:  linear-gradient(transparentize($dark,0.3%) 0%, $dark 100%),url('/images/principal/fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    a{
-        color: white;
-        
-    }
-    .card {
-        width: 18rem;
-        background-color: black;
-        transition: width ease-out 0.2s ;
-
-        &:hover{
-            width: 20rem;
-        }
-    }
+    
+   
 }
 
 footer{
