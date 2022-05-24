@@ -108,21 +108,35 @@
   <div class="informacion text-white fw-bold py-4 ">
     <div class="container-xl  ">
       <h1 class="text-center  ">Contacto</h1>
-      <form class="form " >
-        <fieldset>
-          <legend>Deja tus datos y te contactarémos</legend>
+      <form class="form " action="{{route('PrincipalController.store')}}" method="POST">
+          @csrf
+
           <label for="nombre" class="form-label">Nombre:</label>
           <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+          @error('nombre')
+            <p class="text-danger fw-bold"> {{$message}}</p>
+          @enderror
           <label for="email" class="form-label mt-1">E-mail:</label>
           <input class="form-control " type="email" name="email" id="email" placeholder="Tu E-mail">
+          @error('email')
+            <p class="text-danger fw-bold"> {{$message}}</p>
+          @enderror
           <label for="asunto" class="form-label mt-2">Asunto:</label>
           <textarea class="form-control  " name="asunto" id="asunto" cols="30" rows="10"></textarea>
-          <button type="submit" value="Enviar" class="btn btn-outline-light mt-3 px-4 fw-bold  ">enviar</button>
-        </fieldset>
+          @error('asunto')
+            <p class="text-danger fw-bold "> {{$message}}</p>
+          @enderror
+          <button type="submit"  class="btn btn-outline-light mt-3 px-4 fw-bold  ">enviar</button>
 
 
 
       </form>
+      @if (session('info'))
+        <script>
+          alert("{{session('info')}}");
+        </script>
+        
+      @endif
     </div>
 
   </div><!--Fin informacion-->

@@ -3,10 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PrincipalController;
 
-
-use App\Mail\ContactoPP2Mailable;
-use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,9 +50,4 @@ Route::get('/docentes', function () {
 })->name('docentes');
 
 
-Route::get('/contacto', function () {
-    $correo= new ContactoPP2Mailable;
-
-    Mail::to('danielatonal8@gmail.com')->send($correo);
-    return view('index');
-});
+Route::post('/', [PrincipalController::class,'store'])->name('PrincipalController.store');
