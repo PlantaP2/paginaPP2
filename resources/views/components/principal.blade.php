@@ -54,7 +54,7 @@
           <div class="carousel-item " data-bs-interval="10000">
             <div class="row justify-content-center my-5 align-items-center" id="bienvenida"><!--inicio contenido pestaña-->
               <h2 class="text-center fw-bold  mb-5 ">Objetivos</h2>
-              <img src="images/principal/objetivos.jpg" class="img-fluid col-md-5 mb-5 mb-md-0" alt="">
+              <img  src="images/principal/objetivos.jpg" class="img-fluid col-md-5 mb-5 mb-md-0" alt="">
               <div class="col-md-6">
                 <p class="h5">Generar y aplicar el conocimiento de la termodinámica constructal, del análisis de exergía avanzada y de la exergoeconomía-ambiental a sistemas termodinámicos, tales como plantas térmicas, ciclos Rankine orgánicos, motores de avión, sistemas de refrigeración, plantas de tratamiento de agua, entre otros; con la finalidad de determinar la calidad de la energía. </p>
                 <p class="h5">Estudiar dentro del campo de la turbomaquinaria las inestabilidades de compresores centrífugos, y proponer el rediseño (revamp) de los impulsores para ampliar la región de operación estable.</p>
@@ -110,13 +110,13 @@
       <h1 class="text-center  ">Contacto</h1>
       <form class="form " >
         <fieldset>
-          <legend>Deja tus datos y te contactaremos</legend>
+          <legend>Deja tus datos y te contactarémos</legend>
           <label for="nombre" class="form-label">Nombre:</label>
           <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
-          <label for="correo" class="form-label">E-mail:</label>
+          <label for="email" class="form-label mt-1">E-mail:</label>
           <input class="form-control " type="email" name="email" id="email" placeholder="Tu E-mail">
           <label for="asunto" class="form-label mt-2">Asunto:</label>
-          <textarea class="form-control " name="asunto" id="asunto" cols="30" rows="10"></textarea>
+          <textarea class="form-control  " name="asunto" id="asunto" cols="30" rows="10"></textarea>
           <button type="submit" value="Enviar" class="btn btn-outline-light mt-3 px-4 fw-bold  ">enviar</button>
         </fieldset>
 
