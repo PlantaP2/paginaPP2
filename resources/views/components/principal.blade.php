@@ -2,10 +2,10 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner carrusel-principal">
         <div class="carousel-item active" data-bs-interval="5000">
-          <img src="images/principal/carrusel/carrusel1.jpg" class="d-block img-fluid" alt="...">
+          <img src="images/principal/carrusel/carrusel1.jpg" class="d-block img-fluid w-100" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="images/principal/carrusel/carrusel2.jpg" class="d-block img-fluid" alt="...">
+          <img src="images/principal/carrusel/carrusel2.jpg" class="d-block img-fluid w-100" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="5000">
           <img src="images/principal/carrusel/carrusel3.jpg" class="d-block w-100" alt="...">
@@ -47,10 +47,7 @@
         <p class="h4">Termodinámica, Turbomaquinaría y Energías Sustentables</p>
       </div>
 
-      <div class="col-12">
 
-      </div>
-    </div>
     <div class="  shadow-lg pb-5 mb-3 bg-white" >
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -73,7 +70,7 @@
           <div class="carousel-item " data-bs-interval="10000">
             <div class="row justify-content-center my-5 align-items-center" id="bienvenida"><!--inicio contenido pestaña-->
               <h2 class="text-center fw-bold  mb-5 ">Objetivos</h2>
-              <img src="images/principal/objetivos.jpg" class="img-fluid col-md-5 mb-5 mb-md-0" alt="">
+              <img  src="images/principal/objetivos.jpg" class="img-fluid col-md-5 mb-5 mb-md-0" alt="">
               <div class="col-md-6">
                 <p class="h5">Generar y aplicar el conocimiento de la termodinámica constructal, del análisis de exergía avanzada y de la exergoeconomía-ambiental a sistemas termodinámicos, tales como plantas térmicas, ciclos Rankine orgánicos, motores de avión, sistemas de refrigeración, plantas de tratamiento de agua, entre otros; con la finalidad de determinar la calidad de la energía. </p>
                 <p class="h5">Estudiar dentro del campo de la turbomaquinaria las inestabilidades de compresores centrífugos, y proponer el rediseño (revamp) de los impulsores para ampliar la región de operación estable.</p>
@@ -124,37 +121,38 @@
     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis et unde soluta atque similique laboriosam blanditiis delectus numquam, consequatur fuga, ab eos ex nam dolorem corporis recusandae! Voluptatibus, similique.</p>
   </div>
   <!--inicio informacion-->
-  <div class="informacion bg-dark pt-4 mb-0">
-    <div class="container-xl">
-      <div class="row justify-content-center"><!--inicio tarjetas-->
-        <div class="card col-md-4 mb-5 me-3"><!--inicio tarjeta-->
-          <a href="{{route('docentes')}}" class="text-decoration-none  ">
-            <img src="https://cdn.pixabay.com/photo/2018/01/26/09/04/mathematics-3108152_960_720.jpg" class="card-img-top mt-2 " alt="...">
-            <div class="card-body ">
-              <h5 class="card-title text-center">Nuestros Docentes</h5>
-              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil perferendis accusantium animi reiciendis ut</p>
-            </div>
-          </a> 
-        </div><!--fin tarjeta-->
-        <div class="card col-md-4 mb-5 me-3"><!--inicio tarjeta-->
-          <a href="{{route('egresados.index')}}" class="text-decoration-none ">
-            <img src="https://cdn.pixabay.com/photo/2018/05/26/06/46/graduation-cap-3430714_960_720.jpg" class="card-img-top mt-2 " alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Egresados</h5>
-              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil perferendis accusantium animi reiciendis ut</p>
-            </div>
-          </a> 
-        </div><!--fin tarjeta-->
-        <div class="card col-md-4 mb-5 me-3"><!--inicio tarjeta-->
-          <a href="#" class="text-decoration-none  ">
-            <img src="https://cdn.pixabay.com/photo/2014/06/17/16/53/construction-370588_960_720.jpg" class="card-img-top mt-2 " alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Proyectos</h5>
-              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil perferendis accusantium animi reiciendis ut</p>
-            </div>
-          </a> 
-        </div><!--fin tarjeta-->
-      </div><!--fin tarjetas-->
+  <div class="informacion text-white fw-bold py-4 ">
+    <div class="container-xl  ">
+      <h1 class="text-center  ">Contacto</h1>
+      <form class="form " action="{{route('PrincipalController.store')}}" method="POST">
+          @csrf
+
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+          @error('nombre')
+            <p class="text-danger fw-bold"> {{$message}}</p>
+          @enderror
+          <label for="email" class="form-label mt-1">E-mail:</label>
+          <input class="form-control " type="email" name="email" id="email" placeholder="Tu E-mail">
+          @error('email')
+            <p class="text-danger fw-bold"> {{$message}}</p>
+          @enderror
+          <label for="asunto" class="form-label mt-2">Asunto:</label>
+          <textarea class="form-control  " name="asunto" id="asunto" cols="30" rows="10"></textarea>
+          @error('asunto')
+            <p class="text-danger fw-bold "> {{$message}}</p>
+          @enderror
+          <button type="submit"  class="btn btn-outline-light mt-3 px-4 fw-bold  ">enviar</button>
+
+
+
+      </form>
+      @if (session('info'))
+        <script>
+          alert("{{session('info')}}");
+        </script>
+        
+      @endif
     </div>
 
   </div><!--Fin informacion-->

@@ -5,6 +5,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\PrincipalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,3 +56,5 @@ Route::resource('clientes', ClientController::class);
 
 //Services
 Route::resource('servicios', ServiceController::class);
+
+Route::post('/', [PrincipalController::class,'store'])->name('PrincipalController.store');

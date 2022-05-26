@@ -44,19 +44,26 @@
 
     {{--Tarjetas egresados--}}
     <div class="container-xl">
-        <div class="row justify-content-center">
+        
+        <div class="row justify-content-center align-items-center">
             <!-- Columnas -->
+            
             @foreach($contacts as $contact)
                 <div class=" tarjeta  col-md-5 col-10   mb-3 bg-success ms-md-2 me-md-2 ">
                     <div class="cuerpo-card mb-2 mt-3 bg-white">
-                       <h5 class="card-header bg-white mt-2"><span class="">Nombre</span>: {{$contact->name}}</h5>
-                        <div class="card-body bg-white">
-                            <p class="card-text"><span class="fs-5">Escuela</span>: {{$contact->school}}</p>
-                            <p class="card-text"><span class="fs-5">Correo</span>: {{$contact->email}}</p>
-                            <p class="card-text"><span class="fs-5">Télefono</span>: {{$contact->telephone}}</p>
-                            <h6 class="fs-5">Sobre mí</h6>
-                            <div >
-                                {{$contact->information}}
+                        <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#colapsainfo{{$contact->id}}" role="button" aria-expanded="false" >
+                            <h5 class="card-header bg-white mt-2"><span class="">Nombre</span>: {{$contact->name}}</h5>
+
+                        </a>
+                        <div class="collapse" id="colapsainfo{{$contact->id}}">
+                            <div class="card-body bg-white">
+                                <p class="card-text"><span class="fs-5">Escuela</span>: {{$contact->school}}</p>
+                                <p class="card-text"><span class="fs-5">Correo</span>: {{$contact->email}}</p>
+                                <p class="card-text"><span class="fs-5">Télefono</span>: {{$contact->telephone}}</p>
+                                <h6 class="fs-5">Sobre mí</h6>
+                                <div >
+                                    {{$contact->information}}
+                                </div>
                             </div>
                         </div>
                         
