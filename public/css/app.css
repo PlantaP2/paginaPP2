@@ -11414,6 +11414,14 @@ ul {
   background-size: cover;
 }
 
+#button-hover:hover {
+  color: white;
+}
+
+.justify {
+  text-align: justify;
+}
+
 .info-docentes {
   border-bottom: 1px solid #cac7c7;
 }

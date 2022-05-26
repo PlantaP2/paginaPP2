@@ -28,7 +28,7 @@
     <div class="row mt-5">
       <div class="col-12 d-flex flex-row justify-content-evenly mt-5">
         <div class="d-flex flex-column justify-content-center">
-          <img src="./images/logo-izt.png" alt="" class="img-fluid bg-primary rounded">
+          <img src="./images/logo.png" alt="" class="img-fluid">
           <h4 class="text-uppercase mt-3 text-center" style="color:#509f4a;">iztapalapa</h4>
         </div>
         
@@ -45,7 +45,6 @@
 
       <div class="col-12 my-5 text-center">
         <p class="h4">Termodinámica, Turbomaquinaría y Energías Sustentables</p>
-        <img src="./images/logo.png" alt="" class="img-fluid">
       </div>
 
       <div class="col-12">

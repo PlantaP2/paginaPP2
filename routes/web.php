@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,3 +49,9 @@ Route::post('/articulos', [ArticleController::class, 'store'])->name('articles.s
 Route::get('/docentes', function () {
     return view('docentes.index');
 })->name('docentes');
+
+//Clients
+Route::resource('clientes', ClientController::class);
+
+//Services
+Route::resource('servicios', ServiceController::class);
