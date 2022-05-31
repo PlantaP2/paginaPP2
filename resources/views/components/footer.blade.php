@@ -1,4 +1,4 @@
-<footer class=" pt-3 bg-success">
+<footer class="pt-3 bg-success">
   <div  class="container-xl">
     <div class="row  justify-content-center text-white" >
       <div class="col-md-6 text-center mb-5  ">

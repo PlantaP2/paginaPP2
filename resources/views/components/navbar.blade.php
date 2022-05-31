@@ -3,7 +3,7 @@
         <div class=" text-white row justify-content-around align-items-center">
             <div class="  col-md-4 col-8 "><!--logo-->
                 <a href="./" class="text-decoration-none text-white">
-                    <img src="./images/logo.png" alt="" class="bg-white b img-fluid">
+                    <img src="{{ asset('images/logo.png') }}" alt="" class="bg-white b img-fluid">
 
                 </a>     
             </div><!--fin logo-->
@@ -17,7 +17,7 @@
                     <a href="{{route('docentes')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Docentes</a>
                     <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Egresados</a>
                     <a href="{{route('articles.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Articulos</a>
-                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Producción academica</a>
+                    <a href="{{ route('academicProduction.index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">Producción academica</a>
                     <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Servicios externos</a>
                     <a href="{{ route('clientes.index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">Clientes</a>
                     

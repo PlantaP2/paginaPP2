@@ -6,6 +6,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\AcademicProductionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,3 +59,6 @@ Route::resource('clientes', ClientController::class);
 Route::resource('servicios', ServiceController::class);
 
 Route::post('/', [PrincipalController::class,'store'])->name('PrincipalController.store');
+
+//Academic production
+Route::get('/produccion-academica', [AcademicProductionController::class, 'index'])->name('academicProduction.index');

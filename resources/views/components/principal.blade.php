@@ -85,8 +85,8 @@
                   <img src="https://plazalindavista.mx/wp-content/uploads/2019/03/CFE.jpg"  class="img-fluid col-4 " alt="">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/General_Electric_logo.svg/1200px-General_Electric_logo.svg.png"  class="img-fluid col-4" alt="">
                   <img src="https://globalenergy.mx/wp-content/uploads/2019/01/transcanada_logo_2c_pos_1585x400.jpg"  class="img-fluid col-4 " alt="">
-                  <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t1.6435-9/118769554_3181272161959011_6327723297110086161_n.png?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGiIfU3bMv-6k8Gk9NB5x7NXqBeca4B4xxeoF5xrgHjHMYrbc094TixJiTS-4NkmJ25_sCnsTSWPpTIyjhXyf9L&_nc_ohc=2nsOA1dVu54AX_rhXvZ&_nc_ht=scontent.fmex34-1.fna&oh=00_AT_Cn3GBfQAbymI7ohO9wsArdY6Y4MdYpnzHDO5hIX_NrQ&oe=62AC1D4A"  class="img-fluid col-4 " alt="">
-                  <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t1.18169-9/13239275_1312769305417035_8335649673795505072_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEBIGoDAD6-dJUaVquWPlLG44vxknf2gPTji_GSd_aA9J2RA4_rvMHqZAMADKzqWu0jUt29t_RGedJdd-MdzOhQ&_nc_ohc=N_rR7KrJCO4AX-SGgoa&_nc_ht=scontent.fmex34-1.fna&oh=00_AT9YgsVAO26TcU4F3G72vGIqF32oLlyosp9x6MKnPHGThg&oe=62AB97D0"  class="img-fluid col-4" alt="">
+                  <img src="https://autosolar.es/images/blog/cup-iberdrola.jpg"  class="img-fluid col-4 " alt="">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Logo_Petr%C3%B3leos_Mexicanos.svg"  class="img-fluid col-4" alt="">
                   <img src="https://scontent.fmex34-1.fna.fbcdn.net/v/t1.6435-9/159027257_10157814696456615_4514470716038115023_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGP2aGn0CZrMXxt-leGcGpQxgKxieooRE7GArGJ6ihETj3HYfbHSUQhv2Vhsq3LHVEUKXXedxoMZxnrCzoxdRYg&_nc_ohc=PMHIWSHGadIAX_R_kpb&_nc_ht=scontent.fmex34-1.fna&oh=00_AT8RjkyqsnBkhiAHU17Qi5KVi09SOz5Ksn2Vy-ZlnoKlcg&oe=62AC737E"  class="img-fluid col-4 " alt="">
 
                 </div>
@@ -127,22 +127,29 @@
       <form class="form " action="{{route('PrincipalController.store')}}" method="POST">
           @csrf
 
-          <label for="nombre" class="form-label">Nombre:</label>
-          <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
-          @error('nombre')
-            <p class="text-danger fw-bold"> {{$message}}</p>
-          @enderror
-          <label for="email" class="form-label mt-1">E-mail:</label>
-          <input class="form-control " type="email" name="email" id="email" placeholder="Tu E-mail">
-          @error('email')
-            <p class="text-danger fw-bold"> {{$message}}</p>
-          @enderror
-          <label for="asunto" class="form-label mt-2">Asunto:</label>
-          <textarea class="form-control  " name="asunto" id="asunto" cols="30" rows="10"></textarea>
-          @error('asunto')
-            <p class="text-danger fw-bold "> {{$message}}</p>
-          @enderror
-          <button type="submit"  class="btn btn-outline-light mt-3 px-4 fw-bold  ">enviar</button>
+          <div class="d-flex flex-row justify-content-between">
+            <div class="col-6">
+              <label for="nombre" class="form-label">Nombre:</label>
+              <input class="form-control w-75" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+              @error('nombre')
+                <p class="text-danger fw-bold"> {{$message}}</p>
+              @enderror
+              <label for="email" class="form-label mt-1">E-mail:</label>
+              <input class="form-control w-75" type="email" name="email" id="email" placeholder="Tu E-mail">
+              @error('email')
+                <p class="text-danger fw-bold"> {{$message}}</p>
+              @enderror
+            </div>
+            <div class="col-6">
+              <label for="asunto" class="form-label">Asunto:</label>
+              <textarea class="form-control  " name="asunto" id="asunto" cols="30" rows="10" style="height:109px;" placeholder="Dejanos tus comentarios."></textarea>
+              @error('asunto')
+                <p class="text-danger fw-bold "> {{$message}}</p>
+              @enderror
+            </div>
+          </div>
+          
+          <button type="submit"  class="btn btn-outline-light mt-3 px-4 fw-bold  ">Enviar</button>
 
 
 

@@ -21,7 +21,7 @@
                 <div class="col-12 col-md-10">
                 <div class="card border-top-0 border-end-0 border-start-0 border border-2">
                     <div class="card-body">
-                        <a class="card-title fs-4 text text-decoration-none" href="{{ $article->link }}" target="_blank" rel="noreferrer">
+                        <a style="color:#509f4a;" class="card-title fs-4 text text-decoration-none" href="{{ $article->link }}" target="_blank" rel="noreferrer">
                             {{$article->title}}
                         </a>
                         {{--Authors--}}
