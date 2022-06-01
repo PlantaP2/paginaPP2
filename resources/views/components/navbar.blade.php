@@ -2,7 +2,7 @@
     <div class="container-xl">
         <div class=" text-white row justify-content-around align-items-center">
             <div class="  col-md-4 col-8 "><!--logo-->
-                <a href="./" class="text-decoration-none text-white">
+                <a href="/" class="text-decoration-none text-white">
                     <img src="{{ asset('images/logo.png') }}" alt="" class="bg-white b img-fluid">
 
                 </a>     
