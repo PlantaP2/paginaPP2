@@ -42,6 +42,22 @@ Route::post('/egresados', [ContactController::class, 'store'])
 ->name('egresados.store')
 ->middleware('auth');
 
+Route::get('/egresados/edit/{contact:name}', [ContactController::class, 'edit'])
+->name('egresados.edit')
+->middleware('auth');
+
+Route::get('/egresados/show', [ContactController::class, 'show'])
+->name('egresados.show')
+->middleware('auth');
+
+Route::put('/egresados/update/{contact}', [ContactController::class, 'update'])
+->name('egresados.update')
+->middleware('auth');
+
+Route::get('/egresados/delete/{contact:name}', [ContactController::class, 'destroy'])
+->name('egresados.destroy')
+->middleware('auth');
+
 //Articles
 Route::get('/articulos', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('/articulos/registro', [ArticleController::class, 'create'])->name('articles.create');
