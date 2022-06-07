@@ -72,6 +72,7 @@ class ClientController extends Controller
         ]);
         
     }
+    
 
     /**
      * Show the form for editing the specified resource.
@@ -79,9 +80,15 @@ class ClientController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id )
     {
-        //
+        $project = Client::findOrFail($id);
+        //dd($id);
+        return view('clients.edit',[
+            'project' => $project,
+            'clients' => Client::all()
+        ] );
+    
     }
 
     /**
@@ -93,7 +100,22 @@ class ClientController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $cliente = Client::findOrFail($id);
+        $attributes = $request->validate([
+            'name' => 'required',
+            'company' => 'required',
+            'start-date' => 'required',
+            'finish-date' => 'required',
+            'description' => 'required',
+            'problem' => 'required',
+            'solution' => 'required',
+            'implementations' => 'required',
+            'benefits' => 'required'
+        ]);
+        $cliente->update(request()->all());
+        
+
+        return back()->with('success', 'Datos actualizados');
     }
 
     /**

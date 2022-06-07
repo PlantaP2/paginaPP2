@@ -71,6 +71,8 @@ Route::get('/docentes', function () {
 //Clients
 Route::resource('clientes', ClientController::class);
 
+
+
 //Services
 Route::resource('servicios', ServiceController::class);
 
