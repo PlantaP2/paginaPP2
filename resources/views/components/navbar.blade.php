@@ -13,7 +13,7 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <nav class=" text-white offcanvas-body d-none d-md-flex ">
-                    <a href="{{ route('index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">Inicio</a>
+                    <a href="{{ route('index') }}" class="text-decoration-none text-white me-4 barra-link pt-2 nav-link" style="a:hover{color: blue !important;}">Inicio</a>
                     <a href="{{route('docentes')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Docentes</a>
                     <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Egresados</a>
                     <a href="{{route('articles.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Articulos</a>

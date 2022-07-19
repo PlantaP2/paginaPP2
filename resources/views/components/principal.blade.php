@@ -1,14 +1,15 @@
+
 <div><!--inicio carrusel-->
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner carrusel-principal">
         <div class="carousel-item active" data-bs-interval="5000">
-          <img src="images/principal/carrusel/carrusel1.jpg" class="d-block img-fluid w-100" alt="...">
+          <img src="images/principal/carrusel/carrusel1.jpg" class="prueba-imagen " alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="images/principal/carrusel/carrusel2.jpg" class="d-block img-fluid w-100" alt="...">
+          <img src="images/principal/carrusel/carrusel2.jpg" class="prueba-imagen " alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="5000">
-          <img src="images/principal/carrusel/carrusel3.jpg" class="d-block w-100" alt="...">
+          <img src="images/principal/carrusel/carrusel3.jpg" class="prueba-imagen " alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -23,30 +24,13 @@
     </div>
   </div><!--fin carrusel-->
 
+  
+
   <main class="container-xl my-5"><!--contenido principal-->
     
-    <div class="row mt-5">
-      <div class="col-12 d-flex flex-row justify-content-evenly mt-5">
-        <div class="d-flex flex-column justify-content-center">
-          <img src="./images/logo.png" alt="" class="img-fluid">
-          <h4 class="text-uppercase mt-3 text-center" style="color:#509f4a;">iztapalapa</h4>
-        </div>
-        
-        <div class="mt-0 mt-md-4 mt-lg-5">
-          <div class="">
-            <p class="h3"><strong>Bienvenido a la PP2</strong></p>
-          </div>
-          <div>
-            <p class="h4">ÁREA DE INGENIERÍA EN RECURSOS ENERGÉTICOS</p>
-          </div>
-        </div>
-        
-      </div>
-
-      <div class="col-12 my-5 text-center">
-        <p class="h4">Termodinámica, Turbomaquinaría y Energías Sustentables</p>
-      </div>
-
+    <div class="mt-5 bg-success p-4 mb-3 text-center text-white">
+      <p class="h4">Termodinámica, Turbomaquinaría y Energías Sustentables</p>
+    </div>
 
     <div class="  shadow-lg pb-5 mb-3 bg-white" >
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">

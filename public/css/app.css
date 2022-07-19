@@ -18048,6 +18048,10 @@ p, h1, .h1, h2, .h2, h3, .h3, h4, .h4, a, li, label {
   font-family: "Roboto", sans-serif;
 }
 
+.nav-link :hover {
+  color: blue;
+}
+
 .bg-custom {
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgb(255, 255, 255) 6%, rgb(80, 159, 74) 60%);
@@ -18167,6 +18171,16 @@ ul {
   text-align: justify;
 }
 
+.prueba-imagen {
+  height: 205px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .prueba-imagen {
+    height: 449px;
+  }
+}
 .info-docentes {
   border-bottom: 1px solid #cac7c7;
 }

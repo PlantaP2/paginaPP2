@@ -4,6 +4,13 @@ body{
 p,h1,h2,h3,h4,a,li,label{
     font-family: $font-texts;
 }
+
+
+.nav-link :hover{
+    color: blue;
+}
+
+
 .bg-custom{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 6%, rgba(80,159,74,1) 60%);
@@ -134,5 +141,15 @@ ul{
 .justify{
     text-align: justify;
 }
-  
+
+
+.prueba-imagen{
+    height: 205px;
+    width: 100%;
+}
+@media (min-width:768px){
+    .prueba-imagen{
+        height: 449px;
+    }
+}
   
