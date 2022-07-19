@@ -18167,6 +18167,14 @@ ul {
   color: white;
 }
 
+#facebook:hover {
+  color: #3b5998;
+}
+
+#instagram:hover {
+  color: #C13584;
+}
+
 .justify {
   text-align: justify;
 }
