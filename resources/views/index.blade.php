@@ -3,4 +3,5 @@
 
     <x-principal></x-principal>
     
+    <x-principal-footer></x-principal-footer>
 </x-layout>
