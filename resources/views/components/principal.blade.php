@@ -23,7 +23,7 @@
     </div>
   </div><!--fin carrusel-->
 
-  <main class="container-xl my-5"><!--contenido principal-->
+  <main class="container-xl my-5" data-aos="fade-left"><!--contenido principal-->
     
     <div class="row mt-5">
       <div class="col-12 d-flex flex-row justify-content-evenly mt-5">
@@ -42,13 +42,17 @@
         </div>
         
       </div>
+    </div>
+      
 
-      <div class="col-12 my-5 text-center">
-        <p class="h4">Termodinámica, Turbomaquinaría y Energías Sustentables</p>
-      </div>
+    <div class="col-12 my-5 text-center">
+      <p class="h4">Termodinámica, Turbomaquinaría y Energías Sustentables</p>
+    </div>
 
+   
 
-    <div class="  shadow-lg pb-5 mb-3 bg-white" >
+    <!--carrousel-->
+    <div class="shadow-lg pb-5 mb-3 bg-white"  data-aos="fade-right" >
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

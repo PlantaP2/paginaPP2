@@ -1,4 +1,5 @@
 window._ = require('lodash');
+window.AOS = require('aos');
 
 try {
     require('bootstrap');

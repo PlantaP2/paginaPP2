@@ -49,7 +49,7 @@
             <!-- Columnas -->
             
             @foreach($contacts as $contact)
-                <div class=" tarjeta  col-md-5 col-10   mb-3 bg-success ms-md-2 me-md-2 ">
+                <div class=" tarjeta  col-md-5 col-10   mb-3 bg-success ms-md-2 me-md-2 " data-aos="zoom-in-down">
                     <div class="cuerpo-card mb-2 mt-3 bg-white">
                         <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#colapsainfo{{$contact->id}}" role="button" aria-expanded="false" >
                             <h5 class="card-header bg-white mt-2"><span class="">Nombre</span>: {{$contact->name}}</h5>

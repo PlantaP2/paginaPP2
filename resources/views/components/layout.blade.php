@@ -7,6 +7,7 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}"></script>
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
 
     {{--Fuentes--}}
     
@@ -14,5 +15,11 @@
 </head>
 <body Style="background-color:#F7F7F7;">
     {{ $slot }}
+
+    <script src="bower_components/aos/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>
+   
 </body>
 </html>
