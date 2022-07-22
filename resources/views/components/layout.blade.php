@@ -14,12 +14,16 @@
     <title>PP2 UAM-I</title>
 </head>
 <body Style="background-color:#F7F7F7;">
-    {{ $slot }}
-
     <script src="bower_components/aos/dist/aos.js"></script> 
     <script>
         AOS.init();
     </script>
    
+    <x-navbar></x-navbar>
+    <div class="container-fluid m-0 p-0">
+        {{ $slot }}
+    </div>
+
+    <x-principal-footer></x-principal-footer>
 </body>
 </html>

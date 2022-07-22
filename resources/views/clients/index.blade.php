@@ -42,9 +42,17 @@
                         
                         <div class="col-12 col-md-8 border-md-start">
                             <div class="card-body">
-                                <h5 class="card-title text-success">{{ $client->name }}</h5>
-                                <p class="card-text justify">{{ $client->description }}</p>
-                                <a href="{{ route('clientes.show', $client) }}" id="button-hover" class="btn btn-outline-success">Ver más</a>
+                                
+                                    <h5 class="card-title text-success">{{ $client->name }}</h5>
+                                    <p class="card-text justify">{{ $client->description }}</p>
+                                    <a href="{{ route('clientes.show', $client) }}" id="button-hover" class="btn btn-outline-success">Ver más</a>
+                                    @guest
+                                        @else
+                                            <a href="{{ route('clientes.edit', $client) }}" class="btn btn-outline-primary">Editar</a>
+
+                                    @endguest
+                                        
+                                    
                             </div>
                         </div>
                     </div>

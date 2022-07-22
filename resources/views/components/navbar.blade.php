@@ -1,55 +1,86 @@
-<header class="py-2 mt-0  bg-success ">
-    <div class="container-xl">
-        <div class=" text-white row justify-content-around align-items-center">
-            <div class="  col-md-4 col-8 "><!--logo-->
-                <a href="/" class="text-decoration-none text-white">
-                    <img src="{{ asset('images/logo.png') }}" alt="" class="bg-white b img-fluid">
+<header class="py-0 mt-0">
 
+    <div class="container-fluid bg-white p-3 py-md-2">
+        <div class="row">
+            <div class="col-12"><!--logo-->
+                <a href="/" class="text-decoration-none text-white">
+                    <img src="{{ asset('images/logo.png') }}" alt="" class="bg-white img-fluid mx-auto d-block">
                 </a>     
             </div><!--fin logo-->
+        </div>
+    </div>
     
-            <div class="navbar navbar-expand-md navbar-dark col-md-8 col-4 ">
+    <div class="container-fluid bg-success">
+        <div class="row justify-content align-items-center">
+            <div class="navbar navbar-expand-md navbar-dark col-12 w-100 justify-content-md-center">
                 <button class="navbar-toggler " data-bs-toggle="offcanvas" data-bs-target="#navegacion">
                     <span class="navbar-toggler-icon "></span>
                 </button>
-                <nav class=" text-white offcanvas-body d-none d-md-flex ">
-                    <a href="{{ route('index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">Inicio</a>
-                    <a href="{{route('docentes')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Docentes</a>
-                    <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Egresados</a>
-                    <a href="{{route('articles.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">Articulos</a>
-                    <a href="{{ route('academicProduction.index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">Producción academica</a>
-                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">Servicios externos</a>
-                    <a href="{{ route('clientes.index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">Clientes</a>
-                    
-                        @guest
-                            
-                        @else
-                            <li class="nav-item dropdown" style="list-style-type:none;">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                <nav class="text-white fs-5 offcanvas-body d-none d-md-flex ">
+                    <a href="{{ route('index') }}" class="text-decoration-none text-white me-4 barra-link pt-2 nav-link" style="a:hover{color: blue !important;}">
+                        <i class="bi bi-house me-1"></i>
+                        Inicio
+                    </a>
+                    <a href="{{route('docentes')}}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                        <i class="bi bi-briefcase me-1"></i>
+                        Docentes
+                    </a>
+                    <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                        <i class="bi bi-mortarboard me-1"></i>
+                        Egresados
+                    </a>
+                    <a href="{{route('articles.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                        <i class="bi bi-book me-1"></i>
+                        Articulos
+                    </a>
+                    <a href="{{ route('academicProduction.index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                        <i class="bi bi-graph-up me-1"></i>
+                        Producción academica
+                    </a>
+                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">
+                        <i class="bi bi-hammer me-1"></i>
+                        Servicios externos
+                    </a>
+                    <a href="{{ route('clientes.index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                        <i class="bi bi-person me-1"></i>
+                        Clientes
+                    </a>
+                        
+                    @auth
+                        <li class="nav-item dropdown" style="list-style-type:none;">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a href="{{ route('home') }}" class="dropdown-item">Home</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a href="{{ route('home') }}" class="dropdown-item">Home</a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li> 
+                    @endauth
+                    
+                        <a class="navbar-brand" id="facebook" href="">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
+                        <a class="navbar-brand" id="instagram" href="">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                    
                 </nav>
             </div>
             <!--copia del de arriba para el offcanvas en pantallas pequeñas-->
             <div class="offcanvas offcanvas-start bg-dark justify-content-center  " id="navegacion">
     
                 <!--para poder cerrar el canvas -->
-                <p class="navbar-toggler text-end boton-cerrar-canvas " data-bs-toggle="offcanvas" data-bs-target="#navegacion">
+                <p class="navbar-toggler text-end boton-cerrar-canvas mt-2" data-bs-toggle="offcanvas" data-bs-target="#navegacion">
                     <span class="text-white fw-bold fs-5 ">X</span>
                 </p>
     
@@ -63,42 +94,78 @@
                 <ul class="text-white offcanvas-body list-unstyled">
                         <!-- Authentication Links -->
                         
-                            <li class="nav-item pt-2">
-                                <a href="{{route('index')}}" class="text-decoration-none text-white me-2 barra-link">Inicio</a>
-                            </li>
-                            <li class="nav-item pt-2">
-                                <a href="{{route('docentes')}}" class="  text-decoration-none text-white me-2 barra-link">Docentes</a>
-                            </li>
-                            <li class="nav-item pt-2">
-                                <a href="{{route('egresados.index')}}" class="  text-decoration-none text-white me-2 barra-link">Egresados</a>
-                            </li>
-                            <li class="nav-item pt-2">
-                                <a href="cerca-de-mi.html" class="  text-decoration-none text-white me-2 barra-link">Servicio social</a>
-                            </li>
-                            <li class="nav-item pt-2">
-                                <a href="#" class="  text-decoration-none text-white me-2 barra-link">Ofertas de empleo</a>
-                            </li>
-                        @guest
-                            
-                        @else
-                            <li class="nav-item dropdown">
+                        <li class="nav-item pt-2">
+                            <a href="{{ route('index') }}" class="text-decoration-none text-white me-2 barra-link" >
+                                <i class="bi bi-house me-1"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a href="{{route('docentes')}}" class="text-decoration-none text-white me-2 barra-link">
+                                <i class="bi bi-briefcase me-1"></i>
+                                Docentes
+                            </a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-2 barra-link">
+                                <i class="bi bi-mortarboard me-1"></i>
+                                Egresados
+                            </a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a href="{{route('articles.index')}}" class="text-decoration-none text-white me-2 barra-link">
+                                <i class="bi bi-book me-1"></i>
+                                Articulos
+                            </a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a href="{{ route('academicProduction.index') }}" class="text-decoration-none text-white me-2 barra-link">
+                                <i class="bi bi-graph-up me-1"></i>
+                                Producción academica
+                            </a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a href="#" class="text-decoration-none text-white me-2 barra-link">
+                                <i class="bi bi-hammer me-1"></i>
+                                Servicios externos
+                            </a>
+                        </li>
+                        <li class="nav-item pt-2">
+                            <a href="{{ route('clientes.index') }}" class="text-decoration-none text-white me-2 barra-link">
+                                <i class="bi bi-person me-1"></i>
+                                Clientes
+                            </a>
+                        </li>
+                        @auth
+                            <li class="nav-item dropdown" style="list-style-type:none;">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a href="{{ route('home') }}" class="dropdown-item">Home</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                                    onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
+        
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </div>
-                            </li>
-                        @endguest
+                            </li> 
+                        @endauth
+
+                        <li class="nav-item pt-2">
+                            <a class="navbar-brand text-white" id="facebook" href="">
+                                <i class="bi bi-facebook fs-4"></i>
+                            </a>
+
+                            <a class="navbar-brand text-white" id="instagram" href="">
+                                <i class="bi bi-instagram fs-4"></i>
+                            </a>
+                        </li>
+                           
                     </ul>
             </div><!--fin del canvas-->
         </div>

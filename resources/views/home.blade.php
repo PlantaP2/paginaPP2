@@ -48,6 +48,9 @@
                 <p>Agrega la información sobre los nuevos proyectos en los que hayan trabajado.</p>
 
                 <x-register-link href="{{ route('clientes.create') }}">Registrar</x-register-link>
+                <x-register-link href="{{ route('clientes.index') }}" >Actualizar información</x-register-link>
+
+
             </div>
         </div>
     </div>

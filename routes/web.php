@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ArticleController;
@@ -70,6 +71,8 @@ Route::get('/docentes', function () {
 
 //Clients
 Route::resource('clientes', ClientController::class);
+
+
 
 //Services
 Route::resource('servicios', ServiceController::class);
