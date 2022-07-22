@@ -1,7 +1,11 @@
 <x-layout>
-    <x-navbar></x-navbar>
-
-    <x-principal></x-principal>
     
-    <x-principal-footer></x-principal-footer>
+    <div class="row justify-content-center">
+        <x-carrusel/>
+        <div class="col-10 shadow my-4 bg-white">
+            <x-principal></x-principal>
+        </div>
+        
+    </div>
+    
 </x-layout>

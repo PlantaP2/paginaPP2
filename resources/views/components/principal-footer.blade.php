@@ -55,20 +55,20 @@
       <form class="form " action="{{route('PrincipalController.store')}}" method="POST">
           @csrf
 
-          <div class="d-flex flex-row justify-content-between">
-            <div class="col-6">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-6">
               <label for="nombre" class="form-label">Nombre:</label>
-              <input class="form-control w-75" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+              <input class="form-control w-md-75" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
               @error('nombre')
                 <p class="text-danger fw-bold"> {{$message}}</p>
               @enderror
               <label for="email" class="form-label mt-1">E-mail:</label>
-              <input class="form-control w-75" type="email" name="email" id="email" placeholder="Tu E-mail">
+              <input class="form-control w-md-75" type="email" name="email" id="email" placeholder="Tu E-mail">
               @error('email')
                 <p class="text-danger fw-bold"> {{$message}}</p>
               @enderror
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <label for="asunto" class="form-label">Asunto:</label>
               <textarea class="form-control  " name="asunto" id="asunto" cols="30" rows="10" style="height:109px;" placeholder="Dejanos tus comentarios."></textarea>
               @error('asunto')

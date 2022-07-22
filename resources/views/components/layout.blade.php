@@ -13,6 +13,11 @@
     <title>PP2 UAM-I</title>
 </head>
 <body Style="background-color:#F7F7F7;">
-    {{ $slot }}
+    <x-navbar></x-navbar>
+    <div class="container-fluid m-0 p-0">
+        {{ $slot }}
+    </div>
+
+    <x-principal-footer></x-principal-footer>
 </body>
 </html>
