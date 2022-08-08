@@ -2,10 +2,9 @@
     
     <div class="row justify-content-center">
         <x-carrusel/>
-        <div class="col-10 shadow my-4 bg-white">
+        <x-container>
             <x-principal></x-principal>
-        </div>
-        
+        </x-container>
     </div>
     
 </x-layout>

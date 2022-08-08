@@ -1,5 +1,4 @@
 <x-layout>
-    <x-navbar></x-navbar>
 
         <div class="container my-5 mx-0">
             <div class="row justify-content-center">
@@ -61,5 +60,4 @@
             </div>
         </div>
 
-    <x-footer></x-footer>
 </x-layout>

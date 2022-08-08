@@ -1,5 +1,4 @@
 <x-layout>
-    <x-navbar></x-navbar>
 
         <img src="/images/principal/carrusel/carrusel1.jpg" 
         alt="" class="img-fluid carrusel-principal w-100">
@@ -110,7 +109,4 @@
                 </div>
             </form>
         </div>
-    
-
-    <x-footer/>
 </x-layout>

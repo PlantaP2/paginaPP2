@@ -4,44 +4,44 @@
         <div class="row">
             <div class="col-12"><!--logo-->
                 <a href="/" class="text-decoration-none text-white">
-                    <img src="{{ asset('images/logo.png') }}" alt="" class="bg-white img-fluid mx-auto d-block">
+                    <img src="{{ asset('images/logo2.png') }}" alt="" class="bg-white img-fluid mx-auto d-block">
                 </a>     
             </div><!--fin logo-->
         </div>
     </div>
     
-    <div class="container-fluid bg-success">
+    <div class="container-fluid bg-white">
         <div class="row justify-content align-items-center">
             <div class="navbar navbar-expand-md navbar-dark col-12 w-100 justify-content-md-center">
                 <button class="navbar-toggler " data-bs-toggle="offcanvas" data-bs-target="#navegacion">
-                    <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="text-white fs-5 offcanvas-body d-none d-md-flex ">
-                    <a href="{{ route('index') }}" class="text-decoration-none text-white me-4 barra-link pt-2 nav-link" style="a:hover{color: blue !important;}">
+                <nav class="fs-5 offcanvas-body d-none d-md-flex" style="color:#509f4a">
+                    <a href="{{ route('index') }}" class="text-decoration-none me-4 barra-link pt-2 nav-link" style="a:hover{color: blue !important;};color:#509f4a">
                         <i class="bi bi-house me-1"></i>
                         Inicio
                     </a>
-                    <a href="{{route('docentes')}}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                    <a href="{{route('docentes')}}" class="text-decoration-none me-4 barra-link pt-2" style="color:#509f4a">
                         <i class="bi bi-briefcase me-1"></i>
                         Docentes
                     </a>
-                    <a href="{{route('egresados.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                    <a href="{{route('egresados.index')}}" class="text-decoration-none me-4 barra-link pt-2" style="color:#509f4a">
                         <i class="bi bi-mortarboard me-1"></i>
                         Egresados
                     </a>
-                    <a href="{{route('articles.index')}}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                    <a href="{{route('articles.index')}}" class="text-decoration-none me-4 barra-link pt-2" style="color:#509f4a">
                         <i class="bi bi-book me-1"></i>
                         Articulos
                     </a>
-                    <a href="{{ route('academicProduction.index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                    <a href="{{ route('academicProduction.index') }}" class="text-decoration-none me-4 barra-link pt-2" style="color:#509f4a">
                         <i class="bi bi-graph-up me-1"></i>
                         Producción academica
                     </a>
-                    <a href="#" class="text-decoration-none text-white me-4 barra-link pt-2">
+                    <a href="#" class="text-decoration-none me-4 barra-link pt-2" style="color:#509f4a">
                         <i class="bi bi-hammer me-1"></i>
                         Servicios externos
                     </a>
-                    <a href="{{ route('clientes.index') }}" class="text-decoration-none text-white me-4 barra-link pt-2">
+                    <a href="{{ route('clientes.index') }}" class="text-decoration-none me-4 barra-link pt-2" style="color:#509f4a">
                         <i class="bi bi-person me-1"></i>
                         Clientes
                     </a>

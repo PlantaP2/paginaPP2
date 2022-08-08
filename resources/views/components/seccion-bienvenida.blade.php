@@ -1,5 +1,4 @@
-{{-- seccion --}}
-<div class="row justify-content-center my-5 align-items-center" id="bienvenida"><!--inicio contenido pestaña-->
+<div class="row justify-content-center my-5 align-items-center" id="bienvenida" data-aos="fade-left"><!--inicio contenido pestaña-->
   <h2 class="text-center fw-bold">Te damos la bienvenida</h2>
   <x-underline-text></x-underline-text>
   

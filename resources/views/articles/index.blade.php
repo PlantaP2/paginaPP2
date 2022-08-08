@@ -1,6 +1,4 @@
 <x-layout>
-    <x-navbar></x-navbar>
-
     {{--Articles image--}}
     <section class="text-center">
         <img src="https://static.inaturalist.org/projects/10984-cover.jpg?1488264031"
@@ -57,5 +55,4 @@
     
     {{--End article cards--}}
 
-    <x-footer></x-footer>
 </x-layout>

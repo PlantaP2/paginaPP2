@@ -1,5 +1,5 @@
 {{-- seccion --}}
-<div class="row justify-content-center my-5 align-items-center" id="bienvenida"><!--inicio contenido pestaña-->
+<div class="row justify-content-center my-5 align-items-center" id="bienvenida" data-aos="fade-left"><!--inicio contenido pestaña-->
     <h3 class="text-center fw-bold">Formación de recursos humanos</h3>
 
     <x-underline-text></x-underline-text>

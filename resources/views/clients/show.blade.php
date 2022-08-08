@@ -1,6 +1,4 @@
 <x-layout>
-    <x-navbar/>
-
     
     <div class="container m-0 mx-lg-4 my-5 p-0">
         <div class="row bg-white">
@@ -93,5 +91,4 @@
         </div> --}}
     </div>
 
-    <x-footer/>
 </x-layout>

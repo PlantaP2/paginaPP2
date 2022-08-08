@@ -1,4 +1,4 @@
-<div class="row justify-content-center my-5 align-items-center" id="bienvenida">
+<div class="row justify-content-center my-5 align-items-center" id="bienvenida" data-aos="fade-right">
   <h3 class="text-center">Objetivo</h3>
   <x-underline-text></x-underline-text>
 

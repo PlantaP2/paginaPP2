@@ -1,5 +1,5 @@
 <x-layout>
-    <x-navbar></x-navbar>
+    
     <img src="https://cdn.pixabay.com/photo/2015/10/18/19/04/graduation-995042_960_720.jpg" alt="" class="img-fluid w-100">
 
     <div class="container-xl">
@@ -82,5 +82,4 @@
         </div>
     </div>
     
-    <x-footer></x-footer>
 </x-layout>
