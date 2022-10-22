@@ -1,15 +1,13 @@
 <x-layout>
 
-    <div class="row justify-content-center mt-3">
-        <x-container>
-            <h1 class="fw-bold">Conoce a nuestros representantes</h1>
+    <h1 class="fw-bold my-3 text-center">Conoce a nuestros representantes</h1>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active  fw-bold fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Raúl L. Leyte</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link  fw-bold fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Alejandro T. Aldaco</button>
-            </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active  fw-bold fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Raúl L. Leyte</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link  fw-bold fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Alejandro T. Aldaco</button>
+        </li>
                 
         </ul>
         <div class="tab-content my-5" id="myTabContent">
@@ -18,8 +16,8 @@
         <div class="tab-pane fade show active container-xl" id="home" role="tabpanel" aria-labelledby="home-tab">
             <h2 class="text-center">Dr. Raul Lugo Leyte</h2>
             <div class="row align-items-top">
-                <div class=" col-md-3">
-                    <img src="images/docentes/lugoleyte.jpg" alt="Imagen profesor Raúl Lugo Leyte" class="img-fluid">
+                <div class="col-md-3 ms-md-4">
+                    <img src="images/docentes/lugoleyte.jpg" alt="Imagen profesor Raúl Lugo Leyte" class="img-fluid mt-md-4 pt-md-3 rounded-3">
                         <div class="links mt-2 row ">
                             <h3 class="text-primary col-6">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -27,26 +25,24 @@
                                 </svg>
                             </h3>
                         </div>
-
-                    </div>
+                </div>
                     
                     <div class=" col-md-8">
                         <h3 class="mt-4 mt-md-0">Perfil</h3>
                         <ul class="list-group">
                                 <li class="list-group-item">Doctor en ingenieria mecánica </li>
                                 <li class="list-group-item">Especialidad en plantas térmicas e Ingeniería en procesos</li>
-                                <li class="list-group-item" > Perteneciente al departamento Ingenieria de procesos e hidráulica</li>
+                                <li class="list-group-item" > Perteneciente al departamento Ingenieria de procesos e hidráulica en UAM Iztapalapa</li>
                                 <li  class="list-group-item">Del área de ingenieria en recursos energéticos</li>
                                 <li class="list-group-item">lurl@xanum.uam.mx</li>
                                 <li class="list-group-item">Tel: 58044644</li>
                                 <li class="list-group-item">Cubiculo T-156</li>
-    
-                            </ul>
-                        </div>
+                        </ul>
+                    </div>
     
     
                     </div><!--fin encabezado profe-->
-                    <div class="container-xl mt-5 info-docentes ">
+                    <div class="container-xl mt-5 info-docentes">
                         <h3 class="fw-bold">Semblanza</h3>
                         <p class="fs-5">Obtuvo el título de ____ de la __nombre universidad____. Posteriormente, obtuvo el grado de   ______  del ______nombre Instituto_____ y el grado de Doctorado en Ingeniería mecánica del __________.</p>
     
@@ -87,8 +83,8 @@
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <h2 class="text-center">M. Alejandro Torres Aldaco</h2>
                     <div class="row align-items-top">
-                        <div class=" col-md-3">
-                            <img src="images/docentes/torresAldaco.jpg" alt="Imagen Alejandro Torres Aldaco" class="img-fluid">
+                        <div class=" col-md-3 ms-md-4">
+                            <img src="images/docentes/torresAldaco.jpg" alt="Imagen Alejandro Torres Aldaco" class="img-fluid mt-md-4 pt-md-3 rounded-3">
     
                             <div class="links mt-2 row ">
                                 <h3 class="text-primary col-6">
@@ -104,7 +100,7 @@
                             <ul class=" list-group">
                                 <li class="list-group-item">Maestria en</li>
                                 <li class="list-group-item">Especialidad en síntesis, análisis y operación óptima de procesos termodinámicos y químicos</li>
-                                <li class="list-group-item" > Perteneciente al departamento Ingenieria de procesos e hidráulica</li>
+                                <li class="list-group-item" > Perteneciente al departamento Ingenieria de procesos e hidráulica en UAM Iztapalapa</li>
                                 <li  class="list-group-item">Del área de ingenieria en recursos energéticos</li>
                                 <li class="list-group-item">ata@xanum.uam.mx</li>
                                 <li class="list-group-item">Tel: 58044644</li>
@@ -136,13 +132,8 @@
                             <li class="list-group-item">
                                 <h4 class="articulo">THERMAL PERFORMANCE OF COMPOSED PIPE IN A PARABOLIC TROUGH COLLECTOR FECHA DE ACEPTACION: 30/04/2005 FECHA DE PUBLICACION: 06/08/2005 REVISTA: PROCEEDING OF THE 2005 SOLAR WORLD CONGRESS PAGINA INICIAL: 1 PAGINA FINAL: 6 PAIS: USA IDIOMA:.</h4>
                             </li>
-                            
-                            
                         </ul>
                     </div>
                 </div><!--termina informacion profesor-->
             </div>
-        </x-container>
-        
-    </div>
 </x-layout>

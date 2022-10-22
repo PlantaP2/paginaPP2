@@ -1,6 +1,6 @@
 <header class="py-0 mt-0">
 
-    <div class="container-fluid bg-white p-3 py-md-2">
+    {{-- <div class="container-fluid bg-white p-3 py-md-2">
         <div class="row">
             <div class="col-12"><!--logo-->
                 <a href="/" class="text-decoration-none text-white">
@@ -8,15 +8,23 @@
                 </a>     
             </div><!--fin logo-->
         </div>
-    </div>
+    </div> --}}
     
-    <div class="container-fluid bg-white">
+    <div class="container-fluid bg-white border-bottom">
         <div class="row justify-content align-items-center">
             <div class="navbar navbar-expand-md navbar-dark col-12 w-100 justify-content-md-center">
-                <button class="navbar-toggler " data-bs-toggle="offcanvas" data-bs-target="#navegacion">
-                    <span class="navbar-toggler-icon"></span>
+                <a href="/" data-bs-toggle="offcanvas" data-bs-target="#navegacion" class="navbar-toggler collapsed">
+                    <img src="{{ asset('images/logo2.png') }}" alt="" height="60" width="auto"  class="bg-white mx-auto d-block">
+                </a>
+                <button class="navbar-toggler collapsed bg-success" data-bs-toggle="offcanvas" data-bs-target="#navegacion">
+                    
+                    <i class="navbar-toggler-icon"></i>
                 </button>
                 <nav class="fs-5 offcanvas-body d-none d-md-flex" style="color:#509f4a">
+
+                    <a href="/">
+                        <img src="{{ asset('images/logo2.png') }}" alt="" height="60" width="auto"  class="bg-white  mx-auto d-block">
+                    </a>
                     <a href="{{ route('index') }}" class="text-decoration-none me-4 barra-link pt-2 nav-link" style="a:hover{color: blue !important;};color:#509f4a">
                         <i class="bi bi-house me-1"></i>
                         Inicio
@@ -47,8 +55,8 @@
                     </a>
                         
                     @auth
-                        <li class="nav-item dropdown" style="list-style-type:none;">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <li class="nav-item dropdown" style="list-style-type:none;color:#509f4a">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -70,7 +78,7 @@
                             <i class="bi bi-facebook fs-4"></i>
                         </a>
 
-                        <a class="navbar-brand" id="instagram" href="">
+                        <a class="navbar-brand" id="instagram" href="https://www.instagram.com/cttesuami/">
                             <i class="bi bi-instagram fs-4"></i>
                         </a>
                     

@@ -82,13 +82,7 @@
                 </div>
             </div>
         </div>
-        {{--regresar--}}
-        {{-- <div class="row">
-            <div class="col-4 col-mb-2"></div>
-            <div class="col-8 col-mb-10">
-                <a href="{{ route('clientes.index') }}" id="button-hover" class="btn btn-outline-success my-3">Regresar</a>
-            </div>
-        </div> --}}
+       
     </div>
 
 </x-layout>

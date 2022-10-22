@@ -1,10 +1,9 @@
 <x-layout>
-    <x-navbar></x-navbar>
     <div class="container-xl mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Bienvenido') }}</div>
+                    <div class="card-header">{{ __('Bienvenido') }} {{ Auth::user()->name }}</div>
                 </div>
             </div>
         </div>
@@ -55,5 +54,4 @@
         </div>
     </div>
 
-    <x-footer></x-footer>
 </x-layout>

@@ -29,7 +29,6 @@
                                             <a href="{{ route('clientes.edit', $client) }}" class="btn btn-outline-primary">Editar</a>
 
                                     @endguest
-                                        
                                     
                             </div>
                         </div>

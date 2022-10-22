@@ -9,7 +9,8 @@
     
   </main>
   <div class="container-xl my-5"><!--experiencia-->
-    <h1 class="text-center text-success fw-bold">Encuentranos en UAM Iztapalapa</h1>
+    <h3 class="text-center fw-bold">Encuentranos en UAM Iztapalapa</h3>
+    <x-underline-text></x-underline-text>
     
     <div class="d-flex flex-column-reverse flex-md-row justify-content-around mt-5" style="height:300px;">
       <div class="col-12 col-md-4">
