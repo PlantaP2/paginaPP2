@@ -8,7 +8,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\AcademicProductionController;
-
+use Stichoza\GoogleTranslate\GoogleTranslate;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -81,3 +81,9 @@ Route::post('/', [PrincipalController::class,'store'])->name('PrincipalControlle
 
 //Academic production
 Route::get('/produccion-academica', [AcademicProductionController::class, 'index'])->name('academicProduction.index');
+
+
+//translate
+Route::get('/translate',function(){
+    echo GoogleTranslate::trans('Hello again', 'es', 'en');
+});

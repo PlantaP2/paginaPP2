@@ -16,8 +16,7 @@
                 
                 <x-icon class="bi bi-mortarboard-fill"/>
 
-                <h2>Egresados</h2>
-
+                <h2>{{$traductor->translate('Egresados')}}</h2>
                 <p>Registra un nuevo alumno egresado para mantener su contacto.</p>
 
                 <x-register-link href="{{ route('egresados.create') }}">Registrar</x-register-link>

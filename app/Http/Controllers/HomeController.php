@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Stichoza\GoogleTranslate\GoogleTranslate;
+
 
 class HomeController extends Controller
 {
@@ -24,9 +26,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        
+        $traductor= new GoogleTranslate();
+        $traductor->setSource('es');
+        $traductor->setTarget('en');
+
         return view('home', [
+
             'egresados' => Contact::all(),
+            'traductor'=>$traductor,
         ]);
     }
 }
