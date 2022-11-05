@@ -8,6 +8,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\AcademicProductionController;
+use App\Http\Controllers\PerfilController;
+use App\Http\Controllers\ProfesorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,14 +67,16 @@ Route::get('/articulos/registro', [ArticleController::class, 'create'])->name('a
 Route::post('/articulos', [ArticleController::class, 'store'])->name('articles.store');
 
 //Docentes
-Route::get('/docentes', function () {
-    return view('docentes.index');
-})->name('docentes');
+Route::get('/docentes', [ProfesorController::class ,'index'])->name('docentes');
+Route::get('/docentes/show', [ProfesorController::class ,'show'])->name('docentes.show');
+Route::get('/docentes/{profesor}/edit', [ProfesorController::class ,'show'])->name('docentes.edit');
+
+//Rutas de la informacion del perfil del profesor
+Route::get('/docentes/{profesor:nombre}/perfil', [PerfilController::class ,'edit'])->name('perfil.edit');
+Route::post('/perfil/store', [PerfilController::class ,'store'])->name('perfil.store');
 
 //Clients
 Route::resource('clientes', ClientController::class);
-
-
 
 //Services
 Route::resource('servicios', ServiceController::class);

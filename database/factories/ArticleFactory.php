@@ -14,11 +14,11 @@ class ArticleFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->sentence($nbWords = 6, $variableNbWords = true),
-            'author' => $this->faker->name($gender = null|'male'|'female'),
-            'date' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'title' => $this->faker->sentence(6, true),
+            'author' => $this->faker->name(),
+            'date' => $this->faker->date('Y-m-d', 'now'),
             'link' => $this->faker->url,
-            'abstract' => $this->faker->text($maxNbChars = 1000),
+            'abstract' => $this->faker->text(1000),
         ];
     }
 }

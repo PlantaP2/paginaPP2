@@ -49,6 +49,18 @@
                 <x-register-link href="{{ route('clientes.create') }}">Registrar</x-register-link>
                 <x-register-link href="{{ route('clientes.index') }}" >Actualizar información</x-register-link>
 
+            </div>
+
+            {{--Profesores--}}
+            <div class="col-12 col-md-4 mb-4 m-md-0">
+                
+                <x-icon class="bi bi-easel3"/>
+
+                <h2>Profesores</h2>
+
+                <p>Editar información sobre los profesores.</p>
+
+                <x-register-link href="{{ route('docentes.show') }}" >Actualizar información</x-register-link>
 
             </div>
         </div>

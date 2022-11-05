@@ -13,7 +13,7 @@
     
     <title>PP2 UAM-I</title>
 </head>
-<body Style="background-color:#FFFFFF;">
+<body Style="background-color:#52515138;">
     <script src="bower_components/aos/dist/aos.js"></script> 
     <script>
         AOS.init();
