@@ -17,4 +17,9 @@ class Profesor extends Model
     protected $table = 'profesores';
 
     protected $guarded = [];
+
+    public function perfil()
+    {
+        return $this->hasMany(Perfil::class);
+    }
 }

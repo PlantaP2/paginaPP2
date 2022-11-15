@@ -73,7 +73,10 @@ Route::get('/docentes/{profesor}/edit', [ProfesorController::class ,'show'])->na
 
 //Rutas de la informacion del perfil del profesor
 Route::get('/docentes/{profesor:nombre}/perfil', [PerfilController::class ,'edit'])->name('perfil.edit');
+Route::put('/docentes/{profesor}/perfil', [PerfilController::class ,'update'])->name('perfil.update');
 Route::post('/perfil/store', [PerfilController::class ,'store'])->name('perfil.store');
+Route::get('docentes/{profesor:nombre}/semblanza', ['edit'])->name('semblanza.edit');
+Route::get('semblanza/store', ['store'])->name('semblanza.store');
 
 //Clients
 Route::resource('clientes', ClientController::class);

@@ -58,7 +58,6 @@ class ContactController extends Controller
 
     public function update(Contact $contact)
     {
-
         
         $validated = request()->validate([
             'name' => 'required|max:200',

@@ -12,4 +12,9 @@ class Perfil extends Model
     protected $table = 'perfiles';
 
     protected $guarded = [];
+
+    public function profesor()
+    {
+        return $this->belongsTo(Profesor::class);
+    }
 }

@@ -10,8 +10,9 @@
         </div>
     @endif
 
-    <form action="" method="post" class="mb-4">
+    <form action="{{ route('perfil.update', $profesor) }}" method="post" class="mb-4">
         @csrf
+        @method('PUT')
         <div class="row d-flex justify-content-center">
             <div class="col-8">
                 @foreach ($informacionPerfil as $perfil)

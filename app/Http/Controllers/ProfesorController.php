@@ -19,20 +19,10 @@ class ProfesorController extends Controller
         ]);
     }
 
-    public function create()
-    {
-
-    }
-
-    public function edit(Request $request)
-    {
-        
-    }
-
     public function show()
     {
         $profesorLugo = Profesor::first();
-        $profesorAlejandro = Profesor::where('nombre', 'like', '%Alejandro%')->get();
+        $profesorAlejandro = Profesor::where('nombre', 'like', '%Alejandro%')->get()->first();
         return view('docentes.show', [
             'profesorLugo' => $profesorLugo,
             'profesorAlejandro' => $profesorAlejandro

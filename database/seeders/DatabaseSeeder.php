@@ -29,6 +29,6 @@ class DatabaseSeeder extends Seeder
             'link' => 'https://www.mdpi.com/2076-3417/10/24/9060'
         ]);
 
-        $this->call([ProfesorSeeder::class, PerfilSeeder::class]);
+        $this->call([ProfesorSeeder::class, PerfilSeeder::class, SemblazaSeeder::class]);
     }
 }
