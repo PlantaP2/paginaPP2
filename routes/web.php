@@ -8,8 +8,12 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\AcademicProductionController;
+use App\Http\Controllers\InteresDocenciaController;
+use App\Http\Controllers\InteresInvestigacionController;
+use App\Http\Controllers\InvestigacionesController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\ProfesorController;
+use App\Http\Controllers\SemblazaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,8 +79,18 @@ Route::get('/docentes/{profesor}/edit', [ProfesorController::class ,'show'])->na
 Route::get('/docentes/{profesor:nombre}/perfil', [PerfilController::class ,'edit'])->name('perfil.edit');
 Route::put('/docentes/{profesor}/perfil', [PerfilController::class ,'update'])->name('perfil.update');
 Route::post('/perfil/store', [PerfilController::class ,'store'])->name('perfil.store');
-Route::get('docentes/{profesor:nombre}/semblanza', ['edit'])->name('semblanza.edit');
-Route::get('semblanza/store', ['store'])->name('semblanza.store');
+
+//Rutas para actualizar la semblanza
+Route::put('docentes/{profesor}/semblanza', [SemblazaController::class, 'update'])->name('semblanza.update');
+
+//Rutas para actualizar intereses en la docencia
+Route::put('docentes/{profesor}/intereses_docencia', [InteresDocenciaController::class, 'update'])->name('docencia.update');
+
+//Rutas para actualizar intereses en la investigacion
+Route::put('docentes/{profesor}/intereses_investigacion', [InteresInvestigacionController::class, 'update'])->name('investigacion.update');
+
+//Rutas para actualizar investigaciones
+Route::put('docentes/{profesor}/investigaciones', [InvestigacionesController::class, 'update'])->name('investigaciones.update');
 
 //Clients
 Route::resource('clientes', ClientController::class);

@@ -22,4 +22,42 @@ class Profesor extends Model
     {
         return $this->hasMany(Perfil::class);
     }
+
+    public function semblanza()
+    {
+        return $this->hasMany(Semblaza::class);
+    }
+
+    public function scopeWithSemblanza($query)
+    {
+        $query->addSelect(['semblanza' => Semblaza::select('texto')
+                        ->whereColumn('profesor_id', 'profesores.id')
+                        ->take(1)
+        ]);
+    }
+
+    public function scopeWithInteresesDocencia($query)
+    {
+        $query->addSelect(['Int_docencia' => InteresDocencia::select('intereses')
+                        ->whereColumn('profesor_id', 'profesores.id')
+                        ->take(1)
+        ]);
+    }
+
+    public function scopeWithInteresesInvestigacion($query)
+    {
+        $query->addSelect(['Int_investigacion' => InteresInvestigacion::select('investigaciones')
+                        ->whereColumn('profesor_id', 'profesores.id')
+                        ->take(1)
+        ]);
+    }
+
+    public function scopeWithInvestigaciones($query)
+    {
+        $query->addSelect(['investigaciones' => Investigaciones::select('investigaciones')
+                        ->whereColumn('profesor_id', 'profesores.id')
+                        ->take(1)
+        ]);
+    }
+
 }

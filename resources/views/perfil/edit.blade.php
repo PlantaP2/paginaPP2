@@ -16,11 +16,12 @@
         <div class="row d-flex justify-content-center">
             <div class="col-8">
                 @foreach ($informacionPerfil as $perfil)
-                    <input type="text" class="mb-3 form-control" name="informacion" value="{{ $perfil->informacion }}">
+                    <input type="text" class="mb-3 form-control" name="informacion[]" value="{{ $perfil }}">
                 @endforeach
 
                 <div class="col-auto">
                     <button type="submit" class="btn btn-outline-success">Actualizar</button>
+                    <a href="{{ route('docentes.show') }}" class="btn btn-secondary">Regresar</a>
                 </div>
             </div>
         </div>

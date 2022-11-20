@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Article;
 use App\Models\Contact;
+use App\Models\InteresDocencia;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -28,6 +29,7 @@ class DatabaseSeeder extends Seeder
         Article::factory(10)->create([
             'link' => 'https://www.mdpi.com/2076-3417/10/24/9060'
         ]);
+
 
         $this->call([ProfesorSeeder::class, PerfilSeeder::class, SemblazaSeeder::class]);
     }

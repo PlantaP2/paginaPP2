@@ -12,7 +12,9 @@ class PerfilController extends Controller
     public function edit(Profesor $profesor)
     {
 
-        $informacionPerfil = Perfil::where('profesor_id', $profesor->id)->get();
+        $informacionPerfil = Perfil::where('profesor_id', $profesor->id)->get()->first();
+
+        $informacionPerfil = explode(";", $informacionPerfil->informacion);
 
         return view('perfil.edit', [
             'profesor' => $profesor,
@@ -23,11 +25,20 @@ class PerfilController extends Controller
     public function update(PerfilRequest $request, Profesor $profesor)
     {
 
-        $informacionPerfil = Perfil::where('profesor_id', $profesor->id)->get();
+        $profesor = Profesor::find($profesor->id);
 
-        $profesor->update($informacionPerfil);
+        if(!$profesor)
+        {
+            return back()->with('error', 'No se puede actualizar la información del profesor');
+        }
 
-        return back()->with('success', 'Datos actualizados');
+        $informacionPerfil = Perfil::where('profesor_id', $profesor->id)->get()->first();
+
+        $informacionPerfil['informacion'] = implode(';', $request->informacion);
+
+        $informacionPerfil->update($informacionPerfil->toArray());
+
+        return back()->with('success', 'Información actualizada');
     }
 
     public function store(Request $request)

@@ -2,30 +2,31 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SemblanzaRequest;
+use App\Models\Perfil;
+use App\Models\Profesor;
+use App\Models\Semblaza;
 use Illuminate\Http\Request;
 
 class SemblazaController extends Controller
 {
-    public function edit(Profesor $profesor)
+
+    public function update(SemblanzaRequest $request, Profesor $profesor)
     {
 
-        $informacionPerfil = Perfil::where('profesor_id', $profesor->id)->get();
+        $profesor = Profesor::find($profesor->id);
 
-        return view('perfil.edit', [
-            'profesor' => $profesor,
-            'informacionPerfil' => $informacionPerfil
-        ]);
-    }
+        if(!$profesor)
+        {
+            return back()->with('error', 'No se puede actualizar la información del profesor');
+        }
 
-    public function store(Request $request)
-    {
-        $atributos = $request->validate([
-            'informacion' => 'required',
-            'profesor_id' => 'required'
-        ]);
+        $semblanza = Semblaza::where('profesor_id', $profesor->id)->get()->first();
 
-        Perfil::create($atributos);
+        $semblanza['texto'] = $request->semblanza;
 
-        return back()->with('success', 'Información agregada correctamente');
+        $semblanza->update($semblanza->toArray());
+
+        return back()->with('success', 'Información actualizada');
     }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Perfil;
 use App\Models\Profesor;
+use App\Models\Semblaza;
 use Illuminate\Http\Request;
 
 class ProfesorController extends Controller
@@ -21,11 +22,15 @@ class ProfesorController extends Controller
 
     public function show()
     {
-        $profesorLugo = Profesor::first();
-        $profesorAlejandro = Profesor::where('nombre', 'like', '%Alejandro%')->get()->first();
+        $profesores = Profesor::select('id', 'nombre')
+                    ->WithSemblanza()
+                    ->WithInteresesDocencia()
+                    ->WithInteresesInvestigacion()
+                    ->WithInvestigaciones()
+                    ->get();
+        
         return view('docentes.show', [
-            'profesorLugo' => $profesorLugo,
-            'profesorAlejandro' => $profesorAlejandro
+            'profesores' => $profesores
         ]);
     }
 }
