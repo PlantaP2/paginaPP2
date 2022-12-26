@@ -72,7 +72,7 @@ Route::post('/articulos', [ArticleController::class, 'store'])->name('articles.s
 
 //Docentes
 Route::get('/docentes', [ProfesorController::class ,'index'])->name('docentes');
-Route::get('/docentes/show', [ProfesorController::class ,'show'])->name('docentes.show');
+Route::get('/informacion_docentes', [ProfesorController::class ,'show'])->name('docentes.show');
 Route::get('/docentes/{profesor}/edit', [ProfesorController::class ,'show'])->name('docentes.edit');
 
 //Rutas de la informacion del perfil del profesor
@@ -101,4 +101,4 @@ Route::resource('servicios', ServiceController::class);
 Route::post('/', [PrincipalController::class,'store'])->name('PrincipalController.store');
 
 //Academic production
-Route::get('/produccion-academica', [AcademicProductionController::class, 'index'])->name('academicProduction.index');
+Route::get('/produccion_academica', [AcademicProductionController::class, 'index'])->name('academicProduction.index');
